@@ -12,11 +12,11 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] overflow-hidden px-5 pb-16 pt-28 sm:px-6 lg:px-8"
+      className="relative max-w-full min-h-[90vh] overflow-hidden px-5 pb-16 pt-28 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto grid min-h-[calc(90vh-7rem)] w-full max-w-7xl min-w-0 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="mx-auto grid min-h-[calc(90vh-7rem)] w-full max-w-7xl min-w-0 overflow-hidden items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <motion.div
-          className="min-w-0"
+          className="min-w-0 max-w-[calc(100vw-2.5rem)]"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, ease: 'easeOut' }}
@@ -83,11 +83,11 @@ export function Hero() {
               )
             })}
           </div>
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="mt-8 flex max-w-[calc(100vw-2.5rem)] flex-wrap gap-2 overflow-hidden">
             {toolBadges.map((badge) => (
               <span
                 key={badge.label}
-                className="max-w-full rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1 text-xs font-medium text-cyan-100"
+                className="max-w-full break-words rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1 text-xs font-medium text-cyan-100"
               >
                 {badge.label}
               </span>
@@ -96,12 +96,12 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="relative min-w-0"
+          className="relative min-w-0 max-w-[calc(100vw-2.5rem)] justify-self-stretch overflow-hidden"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.15, duration: 0.65, ease: 'easeOut' }}
         >
-          <div className="relative w-full max-w-full overflow-hidden rounded-lg border border-white/10 bg-slate-900/75 p-4 shadow-2xl shadow-black/30 backdrop-blur sm:p-5">
+          <div className="relative w-full max-w-[calc(100vw-2.5rem)] overflow-hidden rounded-lg border border-white/10 bg-slate-900/75 p-4 shadow-2xl shadow-black/30 backdrop-blur sm:p-5">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/60 to-transparent" />
             <div className="mb-5 flex items-center gap-2">
               <span className="h-3 w-3 rounded-full bg-rose-400" />
@@ -115,7 +115,7 @@ export function Hero() {
               {codeCardLines.map((line) => (
                 <p
                   key={line.prompt}
-                  className="break-all text-slate-300 [overflow-wrap:anywhere] sm:break-words"
+                  className="break-words whitespace-normal text-slate-300 [overflow-wrap:anywhere]"
                 >
                   <span className="text-cyan-300">{line.prompt}</span>{' '}
                   <span className="text-violet-100">{line.value}</span>
