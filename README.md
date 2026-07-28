@@ -47,7 +47,7 @@ npm run build
 ## Deployment
 
 - Platform: Vercel
-- Public website URL: TODO: Add the verified production URL after deployment
+- Public website URL: https://jinhyeok-portfolio-amber.vercel.app
 
 ## TODO Before Sharing
 
