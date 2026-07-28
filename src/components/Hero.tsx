@@ -12,9 +12,9 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[90vh] items-center px-5 pb-16 pt-28 sm:px-6 lg:px-8"
+      className="relative min-h-[90vh] overflow-hidden px-5 pb-16 pt-28 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto grid w-[calc(100vw-2.5rem)] max-w-7xl min-w-0 items-center gap-12 sm:w-full lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="mx-auto grid min-h-[calc(90vh-7rem)] w-full max-w-7xl min-w-0 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <motion.div
           className="min-w-0"
           initial={{ opacity: 0, y: 28 }}
@@ -25,13 +25,13 @@ export function Hero() {
             <Sparkles size={16} aria-hidden="true" />
             AI/ML engineering portfolio
           </div>
-          <h1 className="mt-7 max-w-4xl text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-7 max-w-4xl text-4xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
             {profile.name}
           </h1>
-          <p className="mt-5 text-2xl font-semibold text-cyan-200 sm:text-3xl">
+          <p className="mt-5 text-xl font-semibold leading-snug text-cyan-200 sm:text-3xl">
             {profile.title}
           </p>
-          <p className="mt-6 max-w-2xl break-words text-balance text-xl leading-9 text-slate-200 md:text-2xl">
+          <p className="mt-6 max-w-2xl break-words text-lg leading-8 text-slate-200 md:text-2xl md:leading-9">
             {profile.heroLines.map((line) => (
               <span key={line} className="block">
                 {line}
@@ -41,7 +41,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#projects"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200 sm:w-auto"
+              className="inline-flex w-full max-w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200 sm:w-auto"
             >
               View Projects
               <ArrowDown size={18} aria-hidden="true" />
@@ -49,7 +49,7 @@ export function Hero() {
             {profile.resumeUrl ? (
               <a
                 href={profile.resumeUrl}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-200 sm:w-auto"
+                className="inline-flex w-full max-w-full items-center justify-center gap-2 rounded-md border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-200 sm:w-auto"
               >
                 Download Resume
                 <Download size={18} aria-hidden="true" />
@@ -57,7 +57,7 @@ export function Hero() {
             ) : (
               <span
                 aria-disabled="true"
-                className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-md border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-slate-400 sm:w-auto"
+                className="inline-flex w-full max-w-full cursor-not-allowed items-center justify-center gap-2 rounded-md border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-slate-400 sm:w-auto"
               >
                 Resume not published
                 <Download size={18} aria-hidden="true" />
@@ -101,17 +101,22 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.15, duration: 0.65, ease: 'easeOut' }}
         >
-          <div className="relative overflow-hidden rounded-lg border border-white/10 bg-slate-900/75 p-5 shadow-2xl shadow-black/30 backdrop-blur">
+          <div className="relative w-full max-w-full overflow-hidden rounded-lg border border-white/10 bg-slate-900/75 p-4 shadow-2xl shadow-black/30 backdrop-blur sm:p-5">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/60 to-transparent" />
             <div className="mb-5 flex items-center gap-2">
               <span className="h-3 w-3 rounded-full bg-rose-400" />
               <span className="h-3 w-3 rounded-full bg-amber-300" />
               <span className="h-3 w-3 rounded-full bg-emerald-400" />
-              <span className="ml-auto text-xs text-slate-500">ai_pipeline.ts</span>
+              <span className="ml-auto hidden text-xs text-slate-500 sm:inline">
+                ai_pipeline.ts
+              </span>
             </div>
-            <div className="min-w-0 space-y-3 font-mono text-sm leading-7">
+            <div className="min-w-0 space-y-3 font-mono text-xs leading-6 sm:text-sm sm:leading-7">
               {codeCardLines.map((line) => (
-                <p key={line.prompt} className="break-words text-slate-300">
+                <p
+                  key={line.prompt}
+                  className="break-all text-slate-300 [overflow-wrap:anywhere] sm:break-words"
+                >
                   <span className="text-cyan-300">{line.prompt}</span>{' '}
                   <span className="text-violet-100">{line.value}</span>
                 </p>
