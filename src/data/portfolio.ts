@@ -110,8 +110,8 @@ export const skillGroups: SkillGroup[] = [
     icon: Eye,
     skills: [
       { name: 'Real-Time Tennis Ball Tracking', verified: true },
-      { name: 'TODO: Add verified detection / tracking libraries', verified: false },
-      { name: 'TODO: Add verified video processing stack', verified: false },
+      { name: 'OpenCV / Kalman Filtering', verified: true },
+      { name: 'Video Processing with FFmpeg', verified: true },
     ],
   },
   {
@@ -149,22 +149,25 @@ export const projects: Project[] = [
   },
   {
     title: 'Real-Time Tennis Ball Tracking',
-    image: '/images/projects/tennis-tracking.svg',
-    imageStatus: 'Placeholder image - replace with verified tracking screenshot',
+    image: '/images/projects/tennis-tracking.png',
+    imageStatus: 'Verified Kalman tracking screenshot from project output',
     overview:
-      'TODO: Add a verified 1-2 sentence overview of the real-time tennis ball tracking project.',
+      'Computer vision pipeline for tracking a tennis ball in broadcast match footage with a Kalman-smoothed classical CV approach and portfolio-ready diagnostics.',
     problemDefinition:
-      'TODO: Define the tracking scenario, video conditions, latency target, and evaluation method.',
+      'Detect and track a very small, fast-moving tennis ball in 1280x720 broadcast footage where motion blur, court lines, player occlusion, and net-region noise create frequent false positives.',
     myContribution: [
-      'TODO: Add verified contribution to detection, tracking, preprocessing, or visualization.',
-      'TODO: Add verified implementation and testing details.',
+      'Implemented the Kalman-based tracker using HSV color cues, whiteness cues, Farneback optical flow, Difference of Gaussians blobness, court masking, and net suppression.',
+      'Restored sparse ground-truth alignment, IoU/CLE evaluation, trajectory rendering, and README visuals from Google Drive project artifacts.',
+      'Separated my classical CV/Kalman contribution from collaborator YOLO and TrackNet baseline work in the GitHub documentation.',
     ],
-    techStack: ['TODO: Add verified stack'],
+    techStack: ['Python', 'OpenCV', 'NumPy', 'FilterPy', 'FFmpeg', 'Pillow', 'IoU/CLE evaluation'],
     keyResults: [
-      'TODO: Add verified tracking quality, runtime, demo, or lesson learned.',
+      'Packaged 207-frame tracking output with 4 representative frame captures, trajectory visualization, and frame-level evaluation diagnostics.',
+      'Measured sparse-label performance: mean IoU 0.1827, Success@IoU>=0.5 2.4%, mean CLE 131.18 px.',
+      'Published the completed portfolio repository with restored code, predictions, labels, metrics, and visual assets.',
     ],
-    githubUrl: 'TODO',
-    liveDemoUrl: 'TODO',
+    githubUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking',
+    liveDemoUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking/blob/main/src/trackers/kalman/vis.mp4',
   },
   {
     title: 'Stock Market Prediction',
