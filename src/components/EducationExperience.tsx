@@ -8,8 +8,8 @@ export function EducationExperience() {
     <MotionSection id="experience">
       <SectionHeading
         eyebrow="Education and Experience"
-        title="A clear timeline without invented dates"
-        description="UTS Bachelor of Artificial Intelligence is included as requested. Dates, grades, and detailed outcomes remain TODO until verified."
+        title="Education and selected project work"
+        description="The timeline includes verified education identity and project experience without publishing dates, grades, or employment details that were not provided."
       />
 
       <div className="mx-auto max-w-5xl">
@@ -38,7 +38,7 @@ export function EducationExperience() {
 
               <div className="rounded-lg border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/10">
                 <p className="leading-8 text-slate-300">{item.summary}</p>
-                <ul className="mt-5 space-y-3 text-slate-300">
+                <ul className="mt-5 list-disc space-y-3 pl-5 text-slate-300">
                   {item.highlights.map((highlight) => (
                     <li key={highlight} className="leading-7">
                       {highlight}

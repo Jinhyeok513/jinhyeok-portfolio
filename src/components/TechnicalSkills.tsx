@@ -7,18 +7,9 @@ export function TechnicalSkills() {
     <MotionSection id="skills">
       <SectionHeading
         eyebrow="Technical Skills"
-        title="Verified stack separated from placeholders"
-        description="No fake proficiency percentages. Verified portfolio stack is highlighted, while unknown AI/Data tools stay visibly marked as TODO."
+        title="Verified technical stack"
+        description="Skills are grouped by the technologies found in the portfolio site and inspected project source material. No proficiency percentages are used."
       />
-
-      <div className="mb-6 flex flex-wrap gap-3 text-sm">
-        <span className="rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1 text-cyan-100">
-          Verified
-        </span>
-        <span className="rounded-full border border-amber-200/25 bg-amber-200/10 px-3 py-1 text-amber-100">
-          TODO placeholder
-        </span>
-      </div>
 
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
         {skillGroups.map((group) => {
@@ -35,14 +26,10 @@ export function TechnicalSkills() {
               <ul className="mt-5 space-y-3">
                 {group.skills.map((skill) => (
                   <li
-                    key={skill.name}
-                    className={`rounded-md border px-3 py-2 text-sm leading-6 ${
-                      skill.verified
-                        ? 'border-cyan-300/20 bg-cyan-300/[0.08] text-slate-100'
-                        : 'border-amber-200/15 bg-amber-200/[0.08] text-amber-100'
-                    }`}
+                    key={skill}
+                    className="rounded-md border border-cyan-300/20 bg-cyan-300/[0.08] px-3 py-2 text-sm leading-6 text-slate-100"
                   >
-                    {skill.name}
+                    {skill}
                   </li>
                 ))}
               </ul>

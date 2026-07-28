@@ -5,12 +5,12 @@ import {
   BriefcaseBusiness,
   Code2,
   Database,
+  Dumbbell,
   Eye,
   GitBranch,
   Mail,
-  MapPin,
-  Rocket,
   ServerCog,
+  Sprout,
 } from 'lucide-react'
 
 export type Project = {
@@ -25,15 +25,14 @@ export type Project = {
   keyResults: string[]
   githubUrl: string
   liveDemoUrl: string
+  contextUrl?: string
+  contextLabel?: string
 }
 
 export type SkillGroup = {
   title: string
   icon: LucideIcon
-  skills: Array<{
-    name: string
-    verified: boolean
-  }>
+  skills: string[]
 }
 
 export type TimelineItem = {
@@ -54,16 +53,16 @@ export type ContactLink = {
 
 export const profile = {
   name: 'Jinhyeok Kim',
-  title: 'AI & Data Graduate',
+  title: 'Bachelor of Artificial Intelligence',
   subtitle:
     'Building practical machine learning solutions from data preparation to deployment.',
   heroLines: [
     'Building practical machine learning solutions',
     'from data preparation to deployment.',
   ],
-  location: 'TODO: Add current location',
-  availability: 'TODO: Add availability',
-  resumeUrl: 'TODO',
+  location: 'Not published',
+  availability: 'Not published',
+  resumeUrl: '',
 }
 
 export const navItems = [
@@ -78,74 +77,114 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Programming',
     icon: Code2,
-    skills: [
-      { name: 'React', verified: true },
-      { name: 'TypeScript', verified: true },
-      { name: 'Vite', verified: true },
-      { name: 'Tailwind CSS', verified: true },
-      { name: 'Framer Motion', verified: true },
-      { name: 'TODO: Add verified Python / SQL / R skills', verified: false },
-    ],
+    skills: ['Python', 'TypeScript', 'React', 'Next.js', 'Vite', 'Tailwind CSS'],
   },
   {
     title: 'Machine Learning',
     icon: BrainCircuit,
     skills: [
-      { name: 'TODO: Add verified ML frameworks', verified: false },
-      { name: 'TODO: Add verified model evaluation methods', verified: false },
-      { name: 'TODO: Add verified NLP experience', verified: false },
+      'scikit-learn',
+      'TF-IDF + Logistic Regression',
+      'BERT extractive QA',
+      'TensorFlow / MobileNetV2',
+      'Model evaluation',
     ],
   },
   {
     title: 'Data Analysis',
     icon: BarChart3,
     skills: [
-      { name: 'TODO: Add verified data cleaning tools', verified: false },
-      { name: 'TODO: Add verified visualization tools', verified: false },
-      { name: 'TODO: Add verified statistics or analytics tools', verified: false },
+      'pandas',
+      'NumPy',
+      'CSV / JSON reporting',
+      'Data preprocessing',
+      'Synthetic sample data demos',
     ],
   },
   {
     title: 'Computer Vision',
     icon: Eye,
     skills: [
-      { name: 'Real-Time Tennis Ball Tracking', verified: true },
-      { name: 'OpenCV / Kalman Filtering', verified: true },
-      { name: 'Video Processing with FFmpeg', verified: true },
+      'OpenCV',
+      'MediaPipe Pose',
+      'Kalman filtering',
+      'Optical flow',
+      'Annotated video output',
     ],
   },
   {
     title: 'Deployment & Tools',
     icon: ServerCog,
-    skills: [
-      { name: 'GitHub URL fields ready', verified: true },
-      { name: 'Live Demo URL fields ready', verified: true },
-      { name: 'TODO: Add verified model serving stack', verified: false },
-      { name: 'TODO: Add verified cloud or container tools', verified: false },
-    ],
+    skills: ['Vercel', 'FastAPI', 'Streamlit', 'Git / GitHub', 'pytest'],
   },
 ]
 
 export const projects: Project[] = [
   {
     title: 'BioGeoDA - Australian Native Plant Trait Extraction',
-    image: '/images/projects/biogeoda.svg',
-    imageStatus: 'Placeholder image - replace with verified project visual',
+    image: '/images/projects/biogeoda-pipeline.svg',
+    imageStatus: 'Verified pipeline visual based on the public project structure',
     featured: true,
     overview:
-      'TODO: Add a verified 1-2 sentence overview of the BioGeoDA project scope, dataset, and intended users.',
+      'NLP pipeline that converts OCR-ready Australian native plant descriptions into structured trait-value records, reconstructed from Jinhyeok Kim\'s AI/NLP contribution to a UTS capstone.',
     problemDefinition:
-      'TODO: Define the exact plant trait extraction problem, input sources, and evaluation criteria.',
+      'Australian Plants Journal text can describe propagation, bud bank location, germination treatment, flowering time, plant height, and other traits in free text. The project structures those sentences into trait-value outputs while documenting rule-based, baseline, and extractive QA limitations.',
     myContribution: [
-      'TODO: Add verified contribution to data preparation, model design, annotation, evaluation, or deployment.',
-      'TODO: Add verified collaboration or ownership details.',
+      'Worked on the AI component with a teammate in the original four-person UTS capstone, without including teammate-owned code or confidential client data in the public reconstruction.',
+      'Built trait-to-value mappings, QA example generation, BERT extractive QA fine-tuning, TF-IDF Logistic Regression baseline work, propagation post-processing, and model evaluation.',
+      'Restructured the AI/NLP work into reusable Python modules, tests, sample data, and a Streamlit portfolio demo called BioGeoDA Trait Explorer.',
     ],
-    techStack: ['TODO: Add verified stack'],
+    techStack: [
+      'Python',
+      'Streamlit',
+      'pandas',
+      'scikit-learn',
+      'TF-IDF',
+      'BERT QA',
+      'pytest',
+    ],
     keyResults: [
-      'TODO: Add verified metric, output, paper, demo, or product result.',
+      'Public sample files are synthetic and intentionally small, avoiding private APJ source text, client data, credentials, and full OCR output.',
+      'Historical capstone notebooks recorded TF-IDF Logistic Regression accuracy of 90.7% and macro F1 of 46.2%, highlighting class-imbalance limits for rare trait categories.',
+      'BERT QA training records show 137,408 valid QA examples, a 20,000-example training subset, one epoch, and evaluation loss of approximately 0.321.',
+      'Team validation reviewed more than 2,400 AI-generated candidates and retained 844 correctly matched trait records; this is a team validation result, not a solo claim.',
     ],
-    githubUrl: 'TODO',
-    liveDemoUrl: 'TODO',
+    githubUrl: '',
+    liveDemoUrl: '',
+    contextUrl:
+      'https://resources.austplants.com.au/stories/help-wanted-to-gather-plant-trait-data/',
+    contextLabel: 'Australian Plants Society - Project Context',
+  },
+  {
+    title: 'AI Gym Trainer',
+    image: '/images/projects/gym-ai-trainer.svg',
+    imageStatus: 'Verified system visual based on the inspected Gym AI Trainer pipeline',
+    overview:
+      'KINETIQ is a portfolio application for exercise recognition, pose tracking, annotated video feedback, and downloadable session metrics.',
+    problemDefinition:
+      'Workout videos need an interpretable analysis path that combines movement classification, pose landmark extraction, joint-angle calculations, repetition estimates, and transparent feedback while handling low-confidence predictions carefully.',
+    myContribution: [
+      'Connected a Next.js interface to a FastAPI analysis route backed by the existing Python video pipeline.',
+      'Used MobileNetV2 classification, MediaPipe Pose landmarks, OpenCV rendering, joint-angle calculations, and rule-based form feedback in the verified pipeline.',
+      'Documented uncertainty handling, field-test domain shift, model evidence, and limitations so the project does not read like a medical or coaching claim.',
+    ],
+    techStack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'FastAPI',
+      'TensorFlow',
+      'MobileNetV2',
+      'MediaPipe Pose',
+      'OpenCV',
+    ],
+    keyResults: [
+      'MobileNetV2 recorded 72.0% video accuracy and 78.18% video macro F1 in the project model comparison table.',
+      'The pipeline returns annotated browser-playable video, key frames, session metrics, frame-level JSON, and CSV exports.',
+      'A 10-video field test recorded 20% video-level accuracy, documenting domain shift rather than hiding it.',
+    ],
+    githubUrl: '',
+    liveDemoUrl: 'https://gym-ai-trainer-two.vercel.app',
   },
   {
     title: 'Real-Time Tennis Ball Tracking',
@@ -157,60 +196,69 @@ export const projects: Project[] = [
       'Detect and track a very small, fast-moving tennis ball in 1280x720 broadcast footage where motion blur, court lines, player occlusion, and net-region noise create frequent false positives.',
     myContribution: [
       'Implemented the Kalman-based tracker using HSV color cues, whiteness cues, Farneback optical flow, Difference of Gaussians blobness, court masking, and net suppression.',
-      'Restored sparse ground-truth alignment, IoU/CLE evaluation, trajectory rendering, and README visuals from Google Drive project artifacts.',
-      'Separated my classical CV/Kalman contribution from collaborator YOLO and TrackNet baseline work in the GitHub documentation.',
+      'Restored sparse ground-truth alignment, IoU/CLE evaluation, trajectory rendering, and README visuals from project artifacts.',
+      'Separated the classical CV/Kalman contribution from collaborator YOLO and TrackNet baseline work in the GitHub documentation.',
     ],
-    techStack: ['Python', 'OpenCV', 'NumPy', 'FilterPy', 'FFmpeg', 'Pillow', 'IoU/CLE evaluation'],
+    techStack: [
+      'Python',
+      'OpenCV',
+      'NumPy',
+      'FilterPy',
+      'FFmpeg',
+      'Pillow',
+      'IoU / CLE evaluation',
+    ],
     keyResults: [
-      'Packaged 207-frame tracking output with 4 representative frame captures, trajectory visualization, and frame-level evaluation diagnostics.',
-      'Measured sparse-label performance: mean IoU 0.1827, Success@IoU>=0.5 2.4%, mean CLE 131.18 px.',
+      'Packaged 207-frame tracking output with representative frame captures, trajectory visualization, and frame-level evaluation diagnostics.',
+      'Measured sparse-label performance: mean IoU 0.1827, Success@IoU>=0.5 2.4%, and mean CLE 131.18 px.',
       'Published the completed portfolio repository with restored code, predictions, labels, metrics, and visual assets.',
     ],
     githubUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking',
-    liveDemoUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking/blob/main/src/trackers/kalman/vis.mp4',
+    liveDemoUrl:
+      'https://github.com/Jinhyeok513/Tennis-Ball-Tracking/blob/main/src/trackers/kalman/vis.mp4',
   },
   {
     title: 'Stock Market Prediction',
     image: '/images/projects/stock-market.svg',
-    imageStatus: 'Placeholder image - replace with verified dashboard or notebook visual',
+    imageStatus: 'Project details not verified in the current workspace',
     overview:
-      'TODO: Add a verified 1-2 sentence overview of the stock market prediction project.',
+      'A stock market prediction case study is reserved in the portfolio, but source files, dataset details, validation method, public repository, and demo URL were not found in this workspace.',
     problemDefinition:
-      'TODO: Define the target variable, data source, prediction horizon, and baseline.',
+      'The target variable, data source, prediction horizon, baseline, and risk controls need source evidence before this project can be described as a finished ML case study.',
     myContribution: [
-      'TODO: Add verified contribution to feature engineering, modeling, validation, or dashboarding.',
-      'TODO: Add verified risk controls and evaluation details.',
+      'No verified implementation notes were found locally for this project during the portfolio update.',
+      'The card intentionally avoids claims about performance, trading value, dates, or deployment until project evidence is added.',
     ],
-    techStack: ['TODO: Add verified stack'],
+    techStack: ['Details not verified'],
     keyResults: [
-      'TODO: Add verified result without overstating financial performance.',
+      'No public result is displayed because no verified metric, repository, notebook, or demo asset was available in the current workspace.',
     ],
-    githubUrl: 'TODO',
-    liveDemoUrl: 'TODO',
+    githubUrl: '',
+    liveDemoUrl: '',
   },
 ]
 
 export const timelineItems: TimelineItem[] = [
   {
     title: 'Education',
-    organization: 'UTS Bachelor of Artificial Intelligence',
-    period: 'TODO: Add verified dates',
+    organization: 'University of Technology Sydney',
+    period: 'Dates not published',
     summary:
-      'TODO: Add verified degree status, major details, coursework, and academic focus.',
+      'Bachelor of Artificial Intelligence. Dates, grades, and transcript details are intentionally omitted until Jinhyeok Kim chooses to publish verified records.',
     highlights: [
-      'TODO: Add verified coursework, thesis, capstone, or award.',
-      'TODO: Add verified GPA only if you want to disclose it.',
+      'Portfolio evidence currently emphasizes applied NLP, computer vision, model evaluation, and deployment-oriented project work.',
+      'BioGeoDA originated from a UTS industry capstone and is described with team attribution rather than solo ownership claims.',
     ],
   },
   {
-    title: 'Experience',
-    organization: 'TODO: Add company / lab / role',
-    period: 'TODO: Add verified dates',
+    title: 'Project Experience',
+    organization: 'AI / ML portfolio work',
+    period: 'Dates not published',
     summary:
-      'TODO: Add verified internship, research, project, or work experience summary.',
+      'Selected public-facing work spans NLP trait extraction, exercise pose analysis, tennis ball tracking, and an unpublished stock prediction case-study slot.',
     highlights: [
-      'TODO: Add verified responsibility or impact.',
-      'TODO: Add verified tools and collaboration context.',
+      'Projects are written as engineering case studies with problem framing, contribution boundaries, verified stack, results, and limitations.',
+      'Unverified personal details, employment history, private datasets, and unpublished repository links are not exposed.',
     ],
   },
 ]
@@ -239,59 +287,59 @@ export const contactLinks: ContactLink[] = [
 ]
 
 export const stats = [
-  { label: 'Primary Focus', value: 'AI / Data' },
-  { label: 'Projects', value: '3 featured' },
-  { label: 'Location', value: 'TODO' },
-  { label: 'Availability', value: 'TODO' },
+  { label: 'Primary Focus', value: 'Applied AI / ML' },
+  { label: 'Case Studies', value: '4 projects' },
+  { label: 'Location', value: 'Not published' },
+  { label: 'Availability', value: 'Not published' },
 ]
 
 export const focusAreas = [
   {
     icon: BrainCircuit,
-    title: 'AI / Data Focus',
+    title: 'AI Engineering Focus',
     description:
-      'Practical ML workflow, data preparation, model evaluation, and deployment-oriented portfolio structure.',
+      'Building end-to-end ML workflows that move from data preparation and modeling into demos, APIs, evaluation, and documentation.',
   },
   {
     icon: Database,
-    title: 'Projects',
+    title: 'Data to Evidence',
     description:
-      '3 featured projects are prepared as case studies, with unverified results intentionally marked as TODO.',
+      'Project writing separates verified metrics, team context, limitations, and unpublished details so the portfolio stays credible.',
   },
   {
-    icon: MapPin,
-    title: 'Location',
+    icon: Sprout,
+    title: 'NLP Case Study',
     description:
-      'TODO: Add verified location or work preference.',
+      'BioGeoDA demonstrates plant-trait extraction with mapping, extractive QA, baseline classification, and rule-based propagation extraction.',
   },
   {
-    icon: Rocket,
-    title: 'Availability',
+    icon: Dumbbell,
+    title: 'Computer Vision Systems',
     description:
-      'TODO: Add verified availability for graduate, internship, or full-time opportunities.',
+      'Gym and tennis projects show video analysis, pose or object tracking, diagnostic rendering, and honest model limitations.',
   },
 ]
 
 export const workflowSteps = [
-  { label: 'Prepare', description: 'Clean, structure, and validate data' },
-  { label: 'Model', description: 'Train practical ML solutions' },
-  { label: 'Evaluate', description: 'Measure results against clear baselines' },
-  { label: 'Deploy', description: 'Package demos, APIs, or dashboards' },
+  { label: 'Prepare', description: 'Clean, structure, and validate data sources' },
+  { label: 'Model', description: 'Build practical ML and CV pipelines' },
+  { label: 'Evaluate', description: 'Report metrics, constraints, and limitations' },
+  { label: 'Deploy', description: 'Package demos, APIs, and portfolio-ready outputs' },
 ]
 
 export const toolBadges = [
-  { label: 'React', verified: true },
-  { label: 'TypeScript', verified: true },
-  { label: 'Tailwind CSS', verified: true },
-  { label: 'Framer Motion', verified: true },
-  { label: 'TODO: AI stack', verified: false },
+  { label: 'Python' },
+  { label: 'React / TypeScript' },
+  { label: 'NLP' },
+  { label: 'Computer Vision' },
+  { label: 'Vercel' },
 ]
 
 export const footerLinks = contactLinks
 
 export const codeCardLines = [
-  { prompt: '$ portfolio status', value: 'dark-ai-redesign' },
-  { prompt: '$ focus', value: 'data -> model -> deployment' },
-  { prompt: '$ featured', value: 'BioGeoDA, Tennis Tracking, Stock Prediction' },
-  { prompt: '$ verified-results', value: 'TODO until evidence is added' },
+  { prompt: '$ degree', value: 'Bachelor of Artificial Intelligence' },
+  { prompt: '$ focus', value: 'data -> model -> evaluation -> deployment' },
+  { prompt: '$ featured', value: 'BioGeoDA, Gym AI Trainer, Tennis Tracking' },
+  { prompt: '$ principle', value: 'verified evidence over inflated claims' },
 ]

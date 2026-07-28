@@ -8,8 +8,8 @@ export function Contact() {
     <MotionSection id="contact" className="border-y border-white/5 bg-white/[0.02]">
       <SectionHeading
         eyebrow="Contact"
-        title="Contact and resume hub"
-        description="Verified GitHub, LinkedIn, and email links are connected. Resume remains disabled until a real file is added."
+        title="Contact and profile links"
+        description="Verified GitHub, LinkedIn, and email links are connected directly. The resume area remains disabled until a real PDF is added."
       />
 
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -22,51 +22,60 @@ export function Contact() {
               {profile.name}
             </h3>
             <p className="leading-8 text-slate-300">
-              TODO: Add preferred role titles, location/visa details if relevant,
-              and a concise call to action for recruiters or collaborators.
+              Reach out for AI engineering, machine learning, computer vision,
+              or portfolio project discussions.
             </p>
 
             {contactLinks.map((link) => {
               const Icon = link.icon
-              const disabled = link.href === 'TODO'
 
               return (
                 <a
                   key={link.label}
-                  href={disabled ? undefined : link.href}
-                  aria-disabled={disabled}
+                  href={link.href}
                   aria-label={link.ariaLabel}
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noopener noreferrer' : undefined}
-                  className="inline-flex items-center justify-between gap-3 rounded-md border border-white/10 bg-white/[0.04] px-4 py-4 text-sm font-semibold text-slate-100 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-200 aria-disabled:cursor-not-allowed aria-disabled:opacity-60"
+                  className="inline-flex items-center justify-between gap-3 rounded-md border border-white/10 bg-white/[0.04] px-4 py-4 text-sm font-semibold text-slate-100 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-200"
                 >
-                  <span>{disabled ? `${link.label} TODO` : link.label}</span>
+                  <span>{link.label}</span>
                   <Icon size={18} aria-hidden="true" />
                 </a>
               )
             })}
 
-            <span
-              aria-disabled="true"
-              className="inline-flex cursor-not-allowed items-center justify-between gap-3 rounded-md border border-cyan-300/20 bg-cyan-300/10 px-4 py-4 text-sm font-semibold text-cyan-100 opacity-60"
-            >
-              <span>Resume PDF coming soon</span>
-              <Download size={18} aria-hidden="true" />
-            </span>
+            {profile.resumeUrl ? (
+              <a
+                href={profile.resumeUrl}
+                className="inline-flex items-center justify-between gap-3 rounded-md border border-cyan-300/20 bg-cyan-300/10 px-4 py-4 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-300/20 focus:outline-none focus:ring-2 focus:ring-cyan-200"
+              >
+                <span>Download Resume</span>
+                <Download size={18} aria-hidden="true" />
+              </a>
+            ) : (
+              <span
+                aria-disabled="true"
+                className="inline-flex cursor-not-allowed items-center justify-between gap-3 rounded-md border border-white/10 bg-white/[0.03] px-4 py-4 text-sm font-semibold text-slate-500"
+              >
+                <span>Resume not published</span>
+                <Download size={18} aria-hidden="true" />
+              </span>
+            )}
           </div>
         </div>
 
         <div className="rounded-lg border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-black/10 md:p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-300">
-            Next step
+            Evidence-first portfolio
           </p>
           <h3 className="mt-3 text-2xl font-semibold text-white">
-            Replace remaining project TODOs with verified evidence.
+            Public details stay tied to source material.
           </h3>
           <p className="mt-4 leading-8 text-slate-300">
-            Project repository links, live demos, resume PDF, dates, results, and
-            private details are intentionally not guessed. Add them only after
-            they are verified and ready to publish.
+            Project descriptions, metrics, demos, and repository links are
+            included only where they were found in the current workspace or
+            verified public sources. Private datasets, unpublished resume files,
+            and missing project links are not exposed.
           </p>
         </div>
       </div>

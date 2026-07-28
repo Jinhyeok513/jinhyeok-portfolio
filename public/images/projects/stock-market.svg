@@ -1,25 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
-  <title id="title">Stock market prediction project placeholder</title>
-  <desc id="desc">Abstract financial time series modeling dashboard placeholder.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#020617"/>
-      <stop offset="1" stop-color="#111827"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="800" fill="url(#bg)"/>
-  <circle cx="1010" cy="160" r="250" fill="#7c3aed" opacity="0.16"/>
-  <rect x="120" y="130" width="960" height="540" rx="24" fill="#0f172a" stroke="#334155"/>
-  <path d="M210 570 H990 M210 460 H990 M210 350 H990 M210 240 H990" stroke="#334155" stroke-width="3"/>
-  <path d="M250 520 C340 450 380 470 450 385 S580 300 660 345 S800 455 930 220" fill="none" stroke="url(#line)" stroke-width="14" stroke-linecap="round"/>
-  <path d="M250 585 C350 545 438 552 530 490 S690 430 760 465 S875 535 930 492" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" opacity="0.65" stroke-dasharray="18 18"/>
-  <rect x="220" y="180" width="180" height="42" rx="10" fill="#1e293b" stroke="#475569"/>
-  <rect x="435" y="180" width="126" height="42" rx="10" fill="#1e293b" stroke="#475569"/>
-  <rect x="790" y="520" width="170" height="72" rx="14" fill="#172554" stroke="#38bdf8" stroke-opacity="0.45"/>
-  <rect x="812" y="544" width="58" height="14" rx="7" fill="#38bdf8"/>
-  <rect x="812" y="568" width="98" height="14" rx="7" fill="#a78bfa"/>
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Stock Market Prediction project status visual</title>
+  <desc id="desc">A subdued chart interface marking that source evidence has not yet been connected for this case study.</desc>
+  <rect width="1200" height="760" fill="#030711"/>
+  <rect x="56" y="64" width="1088" height="632" rx="24" fill="#08111f" stroke="#334155"/>
+  <text x="96" y="132" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Stock Market Prediction</text>
+  <text x="96" y="174" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="18">Evidence required before model claims are published</text>
+  <g stroke="#1e293b" stroke-width="1">
+    <path d="M96 610H1104"/>
+    <path d="M96 510H1104"/>
+    <path d="M96 410H1104"/>
+    <path d="M96 310H1104"/>
+    <path d="M96 210H1104"/>
+  </g>
+  <path d="M118 544C194 510 228 430 298 450C382 474 400 326 484 342C574 360 586 488 674 454C762 420 780 274 876 292C954 306 1000 248 1080 216" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+  <path d="M118 592C198 582 246 532 316 536C404 542 448 458 524 472C610 488 646 556 732 528C824 498 880 424 960 432C1016 438 1044 382 1080 368" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <rect x="96" y="232" width="250" height="124" rx="18" fill="#0f172a" stroke="#334155"/>
+  <text x="124" y="276" fill="#67e8f9" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">PUBLIC STATUS</text>
+  <text x="124" y="318" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">Details not verified</text>
+  <rect x="824" y="518" width="246" height="70" rx="18" fill="#0f172a" stroke="#334155"/>
+  <text x="854" y="560" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="18">No trading claims shown</text>
 </svg>

@@ -1,0 +1,42 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">BioGeoDA NLP pipeline visual</title>
+  <desc id="desc">A dark interface-style visual describing OCR-ready text, trait mapping, BERT QA, TF-IDF baseline, and structured plant trait records.</desc>
+  <rect width="1200" height="760" fill="#030711"/>
+  <rect x="44" y="44" width="1112" height="672" rx="24" fill="#08111f" stroke="#164e63" stroke-width="2"/>
+  <circle cx="160" cy="142" r="48" fill="#22d3ee" fill-opacity="0.14"/>
+  <circle cx="1040" cy="612" r="120" fill="#7c3aed" fill-opacity="0.12"/>
+  <text x="96" y="125" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">BioGeoDA Trait Explorer</text>
+  <text x="96" y="164" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="18">OCR-ready plant sentences to structured trait-value records</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="96" y="230" width="260" height="330" rx="18" fill="#0f172a" stroke="#334155"/>
+    <text x="122" y="272" fill="#67e8f9" font-size="15" font-weight="700">INPUT SENTENCE</text>
+    <text x="122" y="322" fill="#cbd5e1" font-size="18">Acacia text</text>
+    <text x="122" y="358" fill="#94a3b8" font-size="16">mentions seed,</text>
+    <text x="122" y="388" fill="#94a3b8" font-size="16">cutting, flowering,</text>
+    <text x="122" y="418" fill="#94a3b8" font-size="16">or plant height.</text>
+    <rect x="122" y="474" width="170" height="34" rx="17" fill="#22d3ee" fill-opacity="0.12" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="144" y="497" fill="#bae6fd" font-size="14">synthetic sample</text>
+    <rect x="470" y="198" width="260" height="404" rx="18" fill="#111827" stroke="#334155"/>
+    <text x="496" y="240" fill="#a78bfa" font-size="15" font-weight="700">AI/NLP PIPELINE</text>
+    <rect x="496" y="280" width="208" height="54" rx="12" fill="#1e293b"/>
+    <text x="518" y="314" fill="#e2e8f0" font-size="16">Trait mapping</text>
+    <rect x="496" y="354" width="208" height="54" rx="12" fill="#1e293b"/>
+    <text x="518" y="388" fill="#e2e8f0" font-size="16">BERT QA examples</text>
+    <rect x="496" y="428" width="208" height="54" rx="12" fill="#1e293b"/>
+    <text x="518" y="462" fill="#e2e8f0" font-size="16">TF-IDF baseline</text>
+    <rect x="496" y="502" width="208" height="54" rx="12" fill="#1e293b"/>
+    <text x="518" y="536" fill="#e2e8f0" font-size="16">Propagation rules</text>
+    <rect x="844" y="230" width="260" height="330" rx="18" fill="#0f172a" stroke="#334155"/>
+    <text x="870" y="272" fill="#67e8f9" font-size="15" font-weight="700">STRUCTURED OUTPUT</text>
+    <text x="870" y="322" fill="#cbd5e1" font-size="18">trait: propagation</text>
+    <text x="870" y="358" fill="#94a3b8" font-size="16">value: seed</text>
+    <text x="870" y="388" fill="#94a3b8" font-size="16">method: rule-based</text>
+    <text x="870" y="418" fill="#94a3b8" font-size="16">confidence: not calibrated</text>
+    <rect x="870" y="474" width="154" height="34" rx="17" fill="#8b5cf6" fill-opacity="0.16" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="892" y="497" fill="#ddd6fe" font-size="14">traceable record</text>
+  </g>
+  <path d="M376 395H448" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <path d="M438 383L450 395L438 407" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M752 395H824" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <path d="M814 383L826 395L814 407" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

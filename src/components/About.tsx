@@ -8,7 +8,7 @@ export function About() {
       <SectionHeading
         eyebrow="About"
         title="Practical AI, from raw data to usable systems"
-        description="A recruiter-facing summary area with verified facts separated from TODO placeholders."
+        description="A concise overview of the verified portfolio direction and the way project evidence is handled."
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
@@ -17,15 +17,19 @@ export function About() {
             {profile.title}
           </p>
           <h3 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
-            Data-minded graduate building toward production AI.
+            AI graduate building evidence-first machine learning projects.
           </h3>
           <p className="mt-5 leading-8 text-slate-300">
-            TODO: Add a verified 2-3 paragraph story covering academic focus,
-            project interests, preferred AI/Data roles, and the type of teams or
-            problems you want to work on.
+            Jinhyeok Kim's portfolio is centered on practical AI systems:
+            preparing data, building models, evaluating outputs, and shaping
+            those results into demos or applications that can be reviewed by
+            others.
           </p>
           <p className="mt-5 leading-8 text-slate-300">
-            Current positioning: {profile.subtitle}
+            The current work highlights NLP for plant-trait extraction,
+            computer vision for sports tracking, and pose-based exercise
+            analysis. Details that are not backed by local source files or
+            public links are deliberately left unpublished.
           </p>
           <div className="mt-7 grid gap-3 sm:grid-cols-2">
             {stats.map((stat) => (
