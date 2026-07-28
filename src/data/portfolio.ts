@@ -14,7 +14,11 @@ import {
 } from 'lucide-react'
 
 export type Project = {
+  id: string
+  slug: string
   title: string
+  summary: string
+  description: string
   image: string
   imageStatus: string
   featured?: boolean
@@ -22,7 +26,18 @@ export type Project = {
   problemDefinition: string
   myContribution: string[]
   techStack: string[]
+  verifiedTechStack: string[]
   keyResults: string[]
+  repositoryUrl: string
+  demoUrl: string
+  internalDemoPath?: string
+  demoType: 'live-app' | 'video' | 'unavailable'
+  demoLabel: string
+  repositoryStatus: 'available' | 'unavailable'
+  deploymentStatus: string
+  videoAsset?: string
+  posterAsset?: string
+  accessibleLabel: string
   githubUrl: string
   liveDemoUrl: string
   contextUrl?: string
@@ -121,7 +136,13 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
+    id: 'biogeoda',
+    slug: 'biogeoda',
     title: 'BioGeoDA - Australian Native Plant Trait Extraction',
+    summary:
+      'NLP and Streamlit project for extracting structured trait records from botanical text.',
+    description:
+      'A verified BioGeoDA case study with a public GitHub repository and Streamlit Trait Explorer demo.',
     image: '/images/projects/biogeoda-pipeline.svg',
     imageStatus: 'Verified pipeline visual based on the public project structure',
     featured: true,
@@ -143,20 +164,43 @@ export const projects: Project[] = [
       'BERT QA',
       'pytest',
     ],
+    verifiedTechStack: [
+      'Python',
+      'Streamlit',
+      'pandas',
+      'scikit-learn',
+      'TF-IDF',
+      'BERT QA',
+      'pytest',
+    ],
     keyResults: [
       'Public sample files are synthetic and intentionally small, avoiding private APJ source text, client data, credentials, and full OCR output.',
       'Historical capstone notebooks recorded TF-IDF Logistic Regression accuracy of 90.7% and macro F1 of 46.2%, highlighting class-imbalance limits for rare trait categories.',
       'BERT QA training records show 137,408 valid QA examples, a 20,000-example training subset, one epoch, and evaluation loss of approximately 0.321.',
       'Team validation reviewed more than 2,400 AI-generated candidates and retained 844 correctly matched trait records; this is a team validation result, not a solo claim.',
     ],
-    githubUrl: '',
-    liveDemoUrl: '',
+    repositoryUrl: 'https://github.com/Jinhyeok513/BioGeoDA',
+    demoUrl: 'https://at4fgpvm22qsheizvjagyt.streamlit.app/',
+    demoType: 'live-app',
+    demoLabel: 'Live Demo',
+    repositoryStatus: 'available',
+    deploymentStatus:
+      'Streamlit Community Cloud URL documented in the BioGeoDA README; CLI curl shows Streamlit auth/session redirects, so browser-level public flow still needs manual verification if the app is private or sleeping.',
+    accessibleLabel: 'Open BioGeoDA Streamlit Trait Explorer live demo',
+    githubUrl: 'https://github.com/Jinhyeok513/BioGeoDA',
+    liveDemoUrl: 'https://at4fgpvm22qsheizvjagyt.streamlit.app/',
     contextUrl:
       'https://resources.austplants.com.au/stories/help-wanted-to-gather-plant-trait-data/',
     contextLabel: 'Australian Plants Society - Project Context',
   },
   {
+    id: 'gym-ai-trainer',
+    slug: 'gym-ai-trainer',
     title: 'AI Gym Trainer',
+    summary:
+      'Production-style exercise analysis app with Next.js, FastAPI, MobileNetV2, MediaPipe, and OpenCV.',
+    description:
+      'A verified KINETIQ demo that accepts short workout clips and returns JSON metrics plus an annotated video.',
     image: '/images/projects/gym-ai-trainer.svg',
     imageStatus: 'Verified system visual based on the inspected Gym AI Trainer pipeline',
     overview:
@@ -178,16 +222,40 @@ export const projects: Project[] = [
       'MediaPipe Pose',
       'OpenCV',
     ],
+    verifiedTechStack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'FastAPI',
+      'TensorFlow',
+      'MobileNetV2',
+      'MediaPipe Pose',
+      'OpenCV',
+    ],
     keyResults: [
       'MobileNetV2 recorded 72.0% video accuracy and 78.18% video macro F1 in the project model comparison table.',
       'The pipeline returns annotated browser-playable video, key frames, session metrics, frame-level JSON, and CSV exports.',
       'A 10-video field test recorded 20% video-level accuracy, documenting domain shift rather than hiding it.',
     ],
-    githubUrl: '',
+    repositoryUrl: 'https://github.com/Jinhyeok513/gym-ai-trainer',
+    demoUrl: 'https://gym-ai-trainer-two.vercel.app',
+    demoType: 'live-app',
+    demoLabel: 'Live Demo',
+    repositoryStatus: 'available',
+    deploymentStatus:
+      'Vercel production app and /api/analyze endpoint verified with short MP4 smoke tests; public demo validates upload size before submission.',
+    accessibleLabel: 'Open AI Gym Trainer live demo',
+    githubUrl: 'https://github.com/Jinhyeok513/gym-ai-trainer',
     liveDemoUrl: 'https://gym-ai-trainer-two.vercel.app',
   },
   {
+    id: 'tennis-ball-tracking',
+    slug: 'tennis-ball-tracking',
     title: 'Real-Time Tennis Ball Tracking',
+    summary:
+      'Classical computer-vision and Kalman-filter tennis ball tracking result demo.',
+    description:
+      'A verified video result generated by rerunning the repository Kalman tracker on the included Shanghai 2014 test clip.',
     image: '/images/projects/tennis-tracking.png',
     imageStatus: 'Verified Kalman tracking screenshot from project output',
     overview:
@@ -208,17 +276,40 @@ export const projects: Project[] = [
       'Pillow',
       'IoU / CLE evaluation',
     ],
+    verifiedTechStack: [
+      'Python',
+      'OpenCV',
+      'NumPy',
+      'FilterPy',
+      'FFmpeg',
+      'IoU / CLE evaluation',
+    ],
     keyResults: [
       'Packaged 207-frame tracking output with representative frame captures, trajectory visualization, and frame-level evaluation diagnostics.',
       'Measured sparse-label performance: mean IoU 0.1827, Success@IoU>=0.5 2.4%, and mean CLE 131.18 px.',
       'Published the completed portfolio repository with restored code, predictions, labels, metrics, and visual assets.',
     ],
+    repositoryUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking',
+    demoUrl: '',
+    internalDemoPath: '#tennis-video-demo',
+    demoType: 'video',
+    demoLabel: 'Watch Result',
+    repositoryStatus: 'available',
+    deploymentStatus:
+      'Internal portfolio video generated from the repository Kalman tracker and served as a static Vercel asset.',
+    videoAsset: '/videos/projects/tennis-tracking-result.mp4',
+    posterAsset: '/images/projects/tennis-tracking-poster.jpg',
+    accessibleLabel: 'Watch Real-Time Tennis Ball Tracking result video',
     githubUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking',
-    liveDemoUrl:
-      'https://github.com/Jinhyeok513/Tennis-Ball-Tracking/blob/main/src/trackers/kalman/vis.mp4',
+    liveDemoUrl: '',
   },
   {
+    id: 'stock-market-prediction',
+    slug: 'stock-market-prediction',
     title: 'Stock Market Prediction',
+    summary: 'Reserved project slot awaiting source evidence.',
+    description:
+      'A reserved case-study slot without verified repository, demo, dataset, or model evidence.',
     image: '/images/projects/stock-market.svg',
     imageStatus: 'Project details not verified in the current workspace',
     overview:
@@ -230,9 +321,17 @@ export const projects: Project[] = [
       'The card intentionally avoids claims about performance, trading value, dates, or deployment until project evidence is added.',
     ],
     techStack: ['Details not verified'],
+    verifiedTechStack: ['Details not verified'],
     keyResults: [
       'No public result is displayed because no verified metric, repository, notebook, or demo asset was available in the current workspace.',
     ],
+    repositoryUrl: '',
+    demoUrl: '',
+    demoType: 'unavailable',
+    demoLabel: 'Demo unavailable',
+    repositoryStatus: 'unavailable',
+    deploymentStatus: 'No verified public deployment found.',
+    accessibleLabel: 'Stock Market Prediction project details unavailable',
     githubUrl: '',
     liveDemoUrl: '',
   },

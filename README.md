@@ -27,6 +27,7 @@ Single-page AI portfolio website for Jinhyeok Kim. The site presents verified Ba
 - `src/data/portfolio.ts`: profile, navigation, skills, project, timeline, and contact data
 - `src/components`: reusable section components
 - `public/images/projects`: project visuals and verified output images
+- `public/videos/projects`: browser-playable project demo videos
 - `public/resume`: reserved location for a future resume PDF
 
 ## Local Development
@@ -51,6 +52,7 @@ npm run build
 
 - Contact links use the verified GitHub, LinkedIn, and email values provided by Jinhyeok Kim.
 - BioGeoDA and Gym AI Trainer descriptions are based on inspected local project README files, source structure, and metrics files.
-- The Tennis project links to the existing public repository and visual output.
+- Gym AI Trainer is linked to the public Vercel app and uses its documented short-video public demo flow.
+- The Tennis project links to the existing public repository and embeds a derived HTML5 tracking-result video generated from the repository pipeline.
 - Stock Market Prediction remains a reserved case-study slot because source files and public links were not found in the current workspace.
 - Resume, unpublished project repositories, and missing demos are not linked until real files or URLs are provided.
