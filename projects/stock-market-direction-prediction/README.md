@@ -4,6 +4,12 @@ Time-series machine-learning project for predicting whether Apple (AAPL) closes 
 
 This is not a trading bot or financial advice. The useful part of the project is the workflow: market data ingestion, lag-safe feature engineering, chronological validation, model comparison, calibration checks, and reporting.
 
+## Live Links
+
+- Live portfolio dashboard: https://jinhyeok-portfolio-amber.vercel.app/#stock-analysis-app
+- Portfolio homepage: https://jinhyeok-portfolio-amber.vercel.app
+- Source folder on GitHub: https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction
+
 ## What I Built
 
 - Downloaded daily AAPL OHLCV market data for 2021-07-15 to 2025-07-15.

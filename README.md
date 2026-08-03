@@ -22,6 +22,12 @@ Single-page AI and data portfolio website for Jinhyeok Kim. The site presents ve
 - Contact
 - Footer
 
+## Live Project Links
+
+- Portfolio: https://jinhyeok-portfolio-amber.vercel.app
+- AAPL Stock Dashboard: https://jinhyeok-portfolio-amber.vercel.app/#stock-analysis-app
+- AAPL Stock Source Code: https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction
+
 ## Project Structure
 
 - `src/data/portfolio.ts`: profile, navigation, skills, project, timeline, and contact data

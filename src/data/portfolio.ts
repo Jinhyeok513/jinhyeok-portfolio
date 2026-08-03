@@ -251,11 +251,11 @@ export const projects: Project[] = [
     demoLabel: 'Open App',
     repositoryStatus: 'available',
     deploymentStatus:
-      'Embedded portfolio dashboard is deployed with the main Vercel site; public-ready code, README, plots, saved result tables, and offline tests are packaged under projects/stock-market-direction-prediction.',
+      'Embedded portfolio dashboard is deployed at jinhyeok-portfolio-amber.vercel.app/#stock-analysis-app; public-ready code, README, plots, saved result tables, and offline tests are linked through GitHub.',
     accessibleLabel: 'Open AAPL Stock Direction Prediction analysis dashboard',
     githubUrl:
       'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction',
-    liveDemoUrl: '#stock-analysis-app',
+    liveDemoUrl: 'https://jinhyeok-portfolio-amber.vercel.app/#stock-analysis-app',
   },
   {
     id: 'gym-ai-trainer',
