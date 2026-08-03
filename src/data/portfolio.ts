@@ -10,6 +10,7 @@ import {
   Mail,
   ServerCog,
   Sprout,
+  TrendingUp,
 } from 'lucide-react'
 
 export type Project = {
@@ -102,6 +103,7 @@ export const skillGroups: SkillGroup[] = [
       'BERT extractive QA',
       'TensorFlow / MobileNetV2',
       'Model evaluation',
+      'Time-series validation',
     ],
   },
   {
@@ -113,6 +115,7 @@ export const skillGroups: SkillGroup[] = [
       'CSV / JSON reporting',
       'Data preprocessing',
       'Data validation',
+      'Walk-forward CV',
       'Microsoft Excel - Intermediate',
       'PivotTables and lookup functions',
     ],
@@ -193,6 +196,65 @@ export const projects: Project[] = [
     contextUrl:
       'https://resources.austplants.com.au/stories/help-wanted-to-gather-plant-trait-data/',
     contextLabel: 'Australian Plants Society - Project Context',
+  },
+  {
+    id: 'stock-direction-prediction',
+    slug: 'stock-direction-prediction',
+    title: 'AAPL Stock Direction Prediction',
+    summary:
+      'Time-series ML project for next-day AAPL direction prediction with walk-forward validation and honest limitation analysis.',
+    description:
+      'A rebuilt Stock assignment project with public-ready Python code, result tables, diagnostic plots, and a case study focused on data-science evaluation rather than trading claims.',
+    image: '/images/projects/stock-direction-roc-pr.png',
+    imageStatus: 'Verified ROC/PR diagnostic plot from the saved Logistic Regression run',
+    featured: true,
+    overview:
+      'AAPL next-day direction classification project using public OHLCV market data, engineered technical features, chronological validation, and model comparison across Logistic Regression, calibrated Linear SVM, and MLP.',
+    problemDefinition:
+      'Short-horizon stock direction prediction is noisy and easy to overstate. The project tests whether lagged price, volatility, momentum, RSI, and volume features contain enough signal for next-day AAPL movement while preserving time order and documenting weak out-of-sample behavior.',
+    myContribution: [
+      'Rebuilt the original university notebook into a public-ready Python project with reusable feature, split, model, threshold, and evaluation functions.',
+      'Used daily AAPL OHLCV data from Stooq with Yahoo Finance fallback, covering 2021-07-15 through 2025-07-15.',
+      'Implemented return, log-return, moving average, momentum, volatility, RSI14, and volume z-score features with a next-day binary direction target.',
+      'Compared Logistic Regression, SVM with Platt calibration, and MLP using chronological train/validation/test splits and 5-fold walk-forward CV.',
+    ],
+    techStack: [
+      'Python',
+      'pandas',
+      'NumPy',
+      'scikit-learn',
+      'pandas-datareader',
+      'yfinance',
+      'Matplotlib',
+      'Time-series CV',
+    ],
+    verifiedTechStack: [
+      'Python',
+      'pandas',
+      'NumPy',
+      'scikit-learn',
+      'Logistic Regression',
+      'Calibrated Linear SVM',
+      'MLPClassifier',
+      'Walk-forward validation',
+    ],
+    keyResults: [
+      'Best walk-forward CV configuration was Logistic Regression with C=0.1, averaging PR AUC 0.552 and ROC AUC 0.557 across five time-ordered folds.',
+      'Final test results were modest: Logistic Regression PR AUC 0.564, ROC AUC 0.527, Brier score 0.248, accuracy 0.534, and F1 0.696.',
+      'The selected thresholds classified all test cases as upward movement, so the project is presented as a model-evaluation and limitation-analysis case study rather than a deployable trading signal.',
+    ],
+    repositoryUrl:
+      'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction',
+    demoUrl: '/case-studies/stock_market_direction_prediction.md',
+    demoType: 'live-app',
+    demoLabel: 'Case Study',
+    repositoryStatus: 'available',
+    deploymentStatus:
+      'Public-ready code, README, selected plots, saved result tables, and offline tests are packaged under projects/stock-market-direction-prediction in the portfolio repository.',
+    accessibleLabel: 'Open AAPL Stock Direction Prediction case study document',
+    githubUrl:
+      'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction',
+    liveDemoUrl: '',
   },
   {
     id: 'gym-ai-trainer',
@@ -376,7 +438,7 @@ export const timelineItems: TimelineItem[] = [
     organization: 'AI / data portfolio work',
     period: '2025-2026',
     summary:
-      'Selected public-facing work spans NLP trait extraction, exercise pose analysis, tennis ball tracking, and an academic project-management case study.',
+      'Selected public-facing work spans NLP trait extraction, time-series stock evaluation, exercise pose analysis, tennis ball tracking, and an academic project-management case study.',
     highlights: [
       'Projects are written as engineering case studies with problem framing, contribution boundaries, verified stack, results, and limitations.',
       'Unverified personal details, employment history, private datasets, and unpublished repository links are not exposed.',
@@ -402,7 +464,7 @@ export const contactLinks: ContactLink[] = [
 
 export const stats = [
   { label: 'Primary Focus', value: 'Applied AI / ML' },
-  { label: 'Case Studies', value: '4 projects' },
+  { label: 'Case Studies', value: '5 projects' },
   { label: 'Location', value: 'Sydney, NSW' },
   { label: 'Graduate Status', value: 'Completed 2026' },
 ]
@@ -418,7 +480,13 @@ export const focusAreas = [
     icon: Database,
     title: 'Data and Evidence',
     description:
-      'Project writing separates verified metrics, team context, limitations, and unpublished details so the portfolio stays credible.',
+      'Project writing separates verified metrics, datasets, team context, limitations, and unpublished details so the portfolio stays credible.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Time-Series ML',
+    description:
+      'The Stock project demonstrates market-data ingestion, lag-safe features, walk-forward validation, calibration checks, and honest weak-signal reporting.',
   },
   {
     icon: Sprout,
@@ -451,6 +519,7 @@ export const toolBadges = [
   { label: 'Python' },
   { label: 'React / TypeScript' },
   { label: 'NLP' },
+  { label: 'Time-Series ML' },
   { label: 'Computer Vision' },
   { label: 'Vercel' },
 ]
@@ -460,6 +529,6 @@ export const footerLinks = contactLinks
 export const codeCardLines = [
   { prompt: '$ degree', value: 'Bachelor of Artificial Intelligence' },
   { prompt: '$ focus', value: 'data -> model -> evaluation -> deployment' },
-  { prompt: '$ featured', value: 'BioGeoDA, Gym AI Trainer, Tennis, EMS Plan' },
+  { prompt: '$ featured', value: 'BioGeoDA, Stock ML, Gym, Tennis, EMS Plan' },
   { prompt: '$ principle', value: 'verified evidence over inflated claims' },
 ]

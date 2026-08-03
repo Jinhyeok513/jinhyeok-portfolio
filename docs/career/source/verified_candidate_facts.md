@@ -8,6 +8,7 @@
 | Email: winsuwon127@gmail.com | Existing Pages resume preview and portfolio source | Verified | Header line and site contact data. |
 | Portfolio URL: jinhyeok-portfolio-amber.vercel.app | Existing Pages resume preview and README | Verified | Header line and README. |
 | GitHub: github.com/Jinhyeok513 | Existing Pages resume preview and project repositories | Verified | Header line and project URLs. |
+| Stock project package: projects/stock-market-direction-prediction | Rebuilt portfolio repository project folder | Verified | Public-ready code, results, plots and case study prepared from assignment evidence. |
 | Bachelor of Artificial Intelligence, UTS | Existing Pages resume preview | Verified | Education section. |
 | Bachelor completed 2026 | Existing Pages resume preview | Verified | Education section. |
 | Graduated with Distinction; WAM 77.94; GPA 5.88/7.00 | Existing Pages resume preview | Verified | Education bullet. |

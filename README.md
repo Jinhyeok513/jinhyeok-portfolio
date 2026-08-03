@@ -31,6 +31,7 @@ Single-page AI and data portfolio website for Jinhyeok Kim. The site presents ve
 - `public/resume`: generated public master resume PDF
 - `public/case-studies`: public Markdown copies of sanitised portfolio case studies
 - `docs/career`: editable Resume/CV package, evidence notes, and case-study source files
+- `projects/stock-market-direction-prediction`: public-ready Stock ML project rebuilt from assignment evidence
 
 ## Local Development
 
@@ -56,6 +57,6 @@ npm run build
 - BioGeoDA and Gym AI Trainer descriptions are based on inspected local project README files, source structure, and metrics files.
 - Gym AI Trainer is linked to the public Vercel app and uses its documented short-video public demo flow.
 - The Tennis project links to the existing public repository and embeds a derived HTML5 tracking-result video generated from the repository pipeline.
-- Stock Market Prediction is removed from the featured portfolio. The local stock assignment is used only as private supporting evidence of machine-learning coursework.
+- AAPL Stock Direction Prediction is included as a time-series ML evaluation project with code, results, diagnostic plots, dataset notes, and limitations.
 - The Event Management System Project Plan is presented as a sanitised academic case study; the original report and workbook are not public.
 - The public resume download points to `public/resume/Jinhyeok_Kim_Master_Resume.pdf`.

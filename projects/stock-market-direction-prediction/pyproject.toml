@@ -1,0 +1,9 @@
+[project]
+name = "stock-market-direction-prediction"
+version = "0.1.0"
+description = "AAPL next-day stock direction prediction with walk-forward validation"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
