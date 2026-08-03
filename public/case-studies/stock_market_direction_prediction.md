@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project predicts whether Apple (AAPL) closes up on the next trading day using daily OHLCV market data, technical time-series features, and supervised classification models. I rebuilt the original university machine-learning assignment into a public-ready project with reusable Python code, saved evaluation tables, diagnostic plots, and a clear limitation analysis.
+This project predicts whether Apple (AAPL) closes up on the next trading day using daily OHLCV market data, technical time-series features, and supervised classification models. I rebuilt the original university machine-learning assignment into a public-ready project with reusable Python code, saved evaluation tables, diagnostic plots, an embedded portfolio dashboard, and a clear limitation analysis.
 
 The project is not a trading bot and does not claim profitable predictive performance. Its value is the data-science workflow: careful feature construction, chronological validation, model comparison, calibration checks, and honest reporting.
 

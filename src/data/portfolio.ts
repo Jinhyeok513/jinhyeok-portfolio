@@ -204,7 +204,7 @@ export const projects: Project[] = [
     summary:
       'Time-series ML project for next-day AAPL direction prediction with walk-forward validation and honest limitation analysis.',
     description:
-      'A rebuilt Stock assignment project with public-ready Python code, result tables, diagnostic plots, and a case study focused on data-science evaluation rather than trading claims.',
+      'A rebuilt Stock assignment project with public-ready Python code, saved result tables, diagnostic plots, and an embedded portfolio dashboard focused on data-science evaluation rather than trading claims.',
     image: '/images/projects/stock-direction-roc-pr.png',
     imageStatus: 'Verified ROC/PR diagnostic plot from the saved Logistic Regression run',
     featured: true,
@@ -245,16 +245,17 @@ export const projects: Project[] = [
     ],
     repositoryUrl:
       'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction',
-    demoUrl: '/case-studies/stock_market_direction_prediction.md',
+    demoUrl: '',
+    internalDemoPath: '#stock-analysis-app',
     demoType: 'live-app',
-    demoLabel: 'Case Study',
+    demoLabel: 'Open App',
     repositoryStatus: 'available',
     deploymentStatus:
-      'Public-ready code, README, selected plots, saved result tables, and offline tests are packaged under projects/stock-market-direction-prediction in the portfolio repository.',
-    accessibleLabel: 'Open AAPL Stock Direction Prediction case study document',
+      'Embedded portfolio dashboard is deployed with the main Vercel site; public-ready code, README, plots, saved result tables, and offline tests are packaged under projects/stock-market-direction-prediction.',
+    accessibleLabel: 'Open AAPL Stock Direction Prediction analysis dashboard',
     githubUrl:
       'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction',
-    liveDemoUrl: '',
+    liveDemoUrl: '#stock-analysis-app',
   },
   {
     id: 'gym-ai-trainer',

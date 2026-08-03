@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Portfolio case study for a rebuilt university machine-learning assignment on AAPL next-day stock direction prediction. The project should be described as a time-series ML workflow and limitation-analysis project, not as a trading system.
+Portfolio support document for a rebuilt university machine-learning assignment on AAPL next-day stock direction prediction. The public portfolio now presents this as an embedded analysis dashboard plus a time-series ML workflow and limitation-analysis project, not as a trading system.
 
 ## Dataset
 

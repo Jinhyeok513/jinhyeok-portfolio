@@ -7,7 +7,7 @@
 - 4 source/audit Markdown files under docs/career/source.
 - Public resume PDF copied to public/resume/Jinhyeok_Kim_Master_Resume.pdf.
 - Public-ready Stock project package under projects/stock-market-direction-prediction, including README, Python source, run script, offline tests, result tables and selected diagnostic plots.
-- Stock portfolio case-study Markdown files under public/case-studies and docs/career/portfolio_case_studies.
+- Stock embedded portfolio dashboard plus supporting Markdown files under public/case-studies and docs/career/portfolio_case_studies.
 
 ## Claims added
 
@@ -31,7 +31,7 @@
 ## Portfolio changes
 
 - Hero and contact copy now presents Jinhyeok as an AI/data graduate with practical applied AI projects.
-- Stock project card added with GitHub path, case study, dataset details, model metrics and explicit limitation notes.
+- Stock project card added with GitHub path, embedded dashboard, dataset details, model metrics, diagnostic plots and explicit limitation notes.
 - Event Management System academic case study added as the fourth project.
 - Resume download button now points to the generated master resume PDF.
 - Tennis video remains embedded as an internal playable portfolio video.
