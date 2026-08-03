@@ -9,7 +9,7 @@ export function Contact() {
       <SectionHeading
         eyebrow="Contact"
         title="Contact and profile links"
-        description="Verified GitHub, LinkedIn, and email links are connected directly. The resume area remains disabled until a real PDF is added."
+        description="Email, GitHub, and the generated master resume are connected directly."
       />
 
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -22,7 +22,7 @@ export function Contact() {
               {profile.name}
             </h3>
             <p className="leading-8 text-slate-300">
-              Reach out for AI engineering, machine learning, computer vision,
+              Reach out for junior AI engineering, data analysis, applied AI,
               or portfolio project discussions.
             </p>
 
@@ -74,8 +74,8 @@ export function Contact() {
           <p className="mt-4 leading-8 text-slate-300">
             Project descriptions, metrics, demos, and repository links are
             included only where they were found in the current workspace or
-            verified public sources. Private datasets, unpublished resume files,
-            and missing project links are not exposed.
+            verified source material. Private datasets, original assessment
+            files, and missing project links are not exposed.
           </p>
         </div>
       </div>

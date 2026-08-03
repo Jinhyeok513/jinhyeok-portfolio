@@ -2,7 +2,6 @@ import type { LucideIcon } from 'lucide-react'
 import {
   BarChart3,
   BrainCircuit,
-  BriefcaseBusiness,
   Code2,
   Database,
   Dumbbell,
@@ -68,16 +67,16 @@ export type ContactLink = {
 
 export const profile = {
   name: 'Jinhyeok Kim',
-  title: 'Bachelor of Artificial Intelligence',
+  title: 'Artificial Intelligence Graduate',
   subtitle:
-    'Building practical machine learning solutions from data preparation to deployment.',
+    'Building practical AI and data applications.',
   heroLines: [
-    'Building practical machine learning solutions',
-    'from data preparation to deployment.',
+    'I develop data-driven applications across natural language processing,',
+    'computer vision, data integration, and interactive analytics.',
   ],
-  location: 'Not published',
-  availability: 'Not published',
-  resumeUrl: '',
+  location: 'Sydney, NSW',
+  availability: 'Completed 2026',
+  resumeUrl: '/resume/Jinhyeok_Kim_Master_Resume.pdf',
 }
 
 export const navItems = [
@@ -113,7 +112,9 @@ export const skillGroups: SkillGroup[] = [
       'NumPy',
       'CSV / JSON reporting',
       'Data preprocessing',
-      'Synthetic sample data demos',
+      'Data validation',
+      'Microsoft Excel - Intermediate',
+      'PivotTables and lookup functions',
     ],
   },
   {
@@ -130,7 +131,7 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Deployment & Tools',
     icon: ServerCog,
-    skills: ['Vercel', 'FastAPI', 'Streamlit', 'Git / GitHub', 'pytest'],
+    skills: ['Vercel', 'FastAPI', 'Streamlit', 'Git / GitHub', 'pytest', 'PowerPoint'],
   },
 ]
 
@@ -251,7 +252,7 @@ export const projects: Project[] = [
   {
     id: 'tennis-ball-tracking',
     slug: 'tennis-ball-tracking',
-    title: 'Real-Time Tennis Ball Tracking',
+    title: 'Tennis Ball Tracking and Trajectory Visualisation',
     summary:
       'Classical computer-vision and Kalman-filter tennis ball tracking result demo.',
     description:
@@ -285,7 +286,7 @@ export const projects: Project[] = [
       'IoU / CLE evaluation',
     ],
     keyResults: [
-      'Packaged 207-frame tracking output with representative frame captures, trajectory visualization, and frame-level evaluation diagnostics.',
+      'Packaged 207-frame tracking output with representative frame captures, trajectory visualisation, and frame-level evaluation diagnostics.',
       'Measured sparse-label performance: mean IoU 0.1827, Success@IoU>=0.5 2.4%, and mean CLE 131.18 px.',
       'Published the completed portfolio repository with restored code, predictions, labels, metrics, and visual assets.',
     ],
@@ -299,39 +300,60 @@ export const projects: Project[] = [
       'Internal portfolio video generated from the repository Kalman tracker and served as a static Vercel asset.',
     videoAsset: '/videos/projects/tennis-tracking-result.mp4',
     posterAsset: '/images/projects/tennis-tracking-poster.jpg',
-    accessibleLabel: 'Watch Real-Time Tennis Ball Tracking result video',
+    accessibleLabel: 'Watch Tennis Ball Tracking and Trajectory Visualisation result video',
     githubUrl: 'https://github.com/Jinhyeok513/Tennis-Ball-Tracking',
     liveDemoUrl: '',
   },
   {
-    id: 'stock-market-prediction',
-    slug: 'stock-market-prediction',
-    title: 'Stock Market Prediction',
-    summary: 'Reserved project slot awaiting source evidence.',
+    id: 'project-management-case-study',
+    slug: 'project-management-case-study',
+    title: 'Event Management System Project Plan - Team Lead',
+    summary:
+      'Sanitised academic project-management case study covering WBS, Gantt scheduling, risks, budget, resources, and stakeholder planning.',
     description:
-      'A reserved case-study slot without verified repository, demo, dataset, or model evidence.',
-    image: '/images/projects/stock-market.svg',
-    imageStatus: 'Project details not verified in the current workspace',
+      'A portfolio-safe case study reconstructed from a UTS Project Management team assignment without publishing the original report or workbook.',
+    image: '/images/projects/project-management-case-study.png',
+    imageStatus: 'Sanitised visual created from verified project metrics',
     overview:
-      'A stock market prediction case study is reserved in the portfolio, but source files, dataset details, validation method, public repository, and demo URL were not found in this workspace.',
+      'Academic project-management case study for a proposed Event Management System supporting a major Sydney festival scenario, led by Jinhyeok Kim in a seven-member team.',
     problemDefinition:
-      'The target variable, data source, prediction horizon, baseline, and risk controls need source evidence before this project can be described as a finished ML case study.',
+      'The team needed to turn a complex event-technology scenario into a credible delivery plan covering scope, stakeholders, communication, risks, quality, budget, resources, dependencies, and change control without implying the system was actually built.',
     myContribution: [
-      'No verified implementation notes were found locally for this project during the portfolio update.',
-      'The card intentionally avoids claims about performance, trading value, dates, or deployment until project evidence is added.',
+      'Led the seven-member academic team by setting direction, assigning tasks, guiding section owners, reviewing deliverables, and integrating the final report.',
+      'Coordinated a WBS and Excel-based schedule containing more than 100 tasks, dependencies, milestones, durations, float, and critical-path indicators.',
+      'Reviewed and connected project sections covering stakeholder management, risk, budget, human resources, scope, quality, vendor coordination, and change control.',
     ],
-    techStack: ['Details not verified'],
-    verifiedTechStack: ['Details not verified'],
+    techStack: [
+      'Microsoft Excel',
+      'WBS',
+      'AON diagram',
+      'Gantt scheduling',
+      'Risk register',
+      'Budget planning',
+      'PowerPoint',
+    ],
+    verifiedTechStack: [
+      'Microsoft Excel',
+      'WBS',
+      'AON diagram',
+      'Gantt scheduling',
+      'Risk register',
+      'Budget planning',
+      'PowerPoint',
+    ],
     keyResults: [
-      'No public result is displayed because no verified metric, repository, notebook, or demo asset was available in the current workspace.',
+      'Academic simulation with a proposed AUD 1.5 million budget, 18-month delivery plan, 100+ tasks, 5 major phases, and 5% contingency.',
+      'Original 68-page report and Excel workbook are intentionally not public because they contain student details and jointly authored assessment material.',
+      'Portfolio case study focuses on leadership, planning, Excel scheduling, risk thinking, reporting, and project coordination rather than claiming real client delivery.',
     ],
     repositoryUrl: '',
-    demoUrl: '',
-    demoType: 'unavailable',
-    demoLabel: 'Demo unavailable',
+    demoUrl: '/case-studies/project_management_case_study.md',
+    demoType: 'live-app',
+    demoLabel: 'Case Study',
     repositoryStatus: 'unavailable',
-    deploymentStatus: 'No verified public deployment found.',
-    accessibleLabel: 'Stock Market Prediction project details unavailable',
+    deploymentStatus:
+      'Public site uses a fresh sanitised summary only; original assessment files are not linked.',
+    accessibleLabel: 'Open Event Management System Project Plan case study document',
     githubUrl: '',
     liveDemoUrl: '',
   },
@@ -341,9 +363,9 @@ export const timelineItems: TimelineItem[] = [
   {
     title: 'Education',
     organization: 'University of Technology Sydney',
-    period: 'Dates not published',
+    period: 'Completed 2026',
     summary:
-      'Bachelor of Artificial Intelligence. Dates, grades, and transcript details are intentionally omitted until Jinhyeok Kim chooses to publish verified records.',
+      'Bachelor of Artificial Intelligence, graduated with Distinction with verified WAM 77.94 and GPA 5.88/7.00.',
     highlights: [
       'Portfolio evidence currently emphasizes applied NLP, computer vision, model evaluation, and deployment-oriented project work.',
       'BioGeoDA originated from a UTS industry capstone and is described with team attribution rather than solo ownership claims.',
@@ -351,10 +373,10 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     title: 'Project Experience',
-    organization: 'AI / ML portfolio work',
-    period: 'Dates not published',
+    organization: 'AI / data portfolio work',
+    period: '2025-2026',
     summary:
-      'Selected public-facing work spans NLP trait extraction, exercise pose analysis, tennis ball tracking, and an unpublished stock prediction case-study slot.',
+      'Selected public-facing work spans NLP trait extraction, exercise pose analysis, tennis ball tracking, and an academic project-management case study.',
     highlights: [
       'Projects are written as engineering case studies with problem framing, contribution boundaries, verified stack, results, and limitations.',
       'Unverified personal details, employment history, private datasets, and unpublished repository links are not exposed.',
@@ -376,20 +398,13 @@ export const contactLinks: ContactLink[] = [
     ariaLabel: "Visit Jinhyeok Kim's GitHub profile",
     external: true,
   },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/Jinhyeok Kim',
-    icon: BriefcaseBusiness,
-    ariaLabel: "Visit Jinhyeok Kim's LinkedIn profile",
-    external: true,
-  },
 ]
 
 export const stats = [
   { label: 'Primary Focus', value: 'Applied AI / ML' },
   { label: 'Case Studies', value: '4 projects' },
-  { label: 'Location', value: 'Not published' },
-  { label: 'Availability', value: 'Not published' },
+  { label: 'Location', value: 'Sydney, NSW' },
+  { label: 'Graduate Status', value: 'Completed 2026' },
 ]
 
 export const focusAreas = [
@@ -401,7 +416,7 @@ export const focusAreas = [
   },
   {
     icon: Database,
-    title: 'Data to Evidence',
+    title: 'Data and Evidence',
     description:
       'Project writing separates verified metrics, team context, limitations, and unpublished details so the portfolio stays credible.',
   },
@@ -416,6 +431,12 @@ export const focusAreas = [
     title: 'Computer Vision Systems',
     description:
       'Gym and tennis projects show video analysis, pose or object tracking, diagnostic rendering, and honest model limitations.',
+  },
+  {
+    icon: Database,
+    title: 'Project Coordination',
+    description:
+      'A sanitised academic case study shows Excel scheduling, WBS, risk, resource, budget, and team-lead planning experience.',
   },
 ]
 
@@ -439,6 +460,6 @@ export const footerLinks = contactLinks
 export const codeCardLines = [
   { prompt: '$ degree', value: 'Bachelor of Artificial Intelligence' },
   { prompt: '$ focus', value: 'data -> model -> evaluation -> deployment' },
-  { prompt: '$ featured', value: 'BioGeoDA, Gym AI Trainer, Tennis Tracking' },
+  { prompt: '$ featured', value: 'BioGeoDA, Gym AI Trainer, Tennis, EMS Plan' },
   { prompt: '$ principle', value: 'verified evidence over inflated claims' },
 ]

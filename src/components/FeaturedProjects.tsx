@@ -247,8 +247,8 @@ export function FeaturedProjects() {
                       current === project.title ? '' : project.title,
                     )
                   }
-                >
-                  Details
+                  >
+                  Case Study
                   {openProject === project.title ? (
                     <ChevronUp size={18} aria-hidden="true" />
                   ) : (
@@ -259,6 +259,14 @@ export function FeaturedProjects() {
 
               {openProject === project.title && (
                 <div className="mt-4 space-y-4 rounded-lg border border-white/10 bg-slate-950/55 p-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">
+                      Overview
+                    </p>
+                    <p className="mt-2 text-sm leading-7 text-slate-300">
+                      {project.description}
+                    </p>
+                  </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">
                       Problem
@@ -286,6 +294,29 @@ export function FeaturedProjects() {
                         <li key={result}>{result}</li>
                       ))}
                     </ul>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">
+                      Tools
+                    </p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {project.verifiedTechStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs text-cyan-100"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">
+                      Link Status
+                    </p>
+                    <p className="mt-2 text-sm leading-7 text-slate-300">
+                      {project.deploymentStatus}
+                    </p>
                   </div>
                 </div>
               )}
