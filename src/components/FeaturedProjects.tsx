@@ -1,14 +1,11 @@
 import { useState } from 'react'
 import {
-  Activity,
   ChevronDown,
   ChevronUp,
   ExternalLink,
   GitBranch,
-  LineChart,
   PlayCircle,
   Star,
-  Table2,
 } from 'lucide-react'
 import { projects, type Project } from '../data/portfolio'
 import { MotionSection } from './MotionSection'
@@ -153,189 +150,9 @@ function TennisVideoDemo({ project }: { project: Project }) {
   )
 }
 
-const stockMetrics = [
-  {
-    model: 'Logistic Regression',
-    acc: '0.534',
-    f1: '0.696',
-    roc: '0.527',
-    pr: '0.564',
-    brier: '0.248',
-    threshold: '0.397',
-    note: 'Best saved test PR AUC and Brier score',
-  },
-  {
-    model: 'SVM + Platt',
-    acc: '0.534',
-    f1: '0.696',
-    roc: '0.507',
-    pr: '0.533',
-    brier: '0.252',
-    threshold: '0.000',
-    note: 'Calibration layer added to Linear SVM',
-  },
-  {
-    model: 'MLP',
-    acc: '0.534',
-    f1: '0.696',
-    roc: '0.478',
-    pr: '0.522',
-    brier: '0.265',
-    threshold: '0.366',
-    note: 'Non-linear baseline with early stopping',
-  },
-]
-
-const stockDiagnostics = [
-  {
-    title: 'ROC / PR',
-    src: '/images/projects/stock-direction-roc-pr.png',
-    caption: 'Logistic Regression test-set ranking diagnostics',
-  },
-  {
-    title: 'Walk-Forward CV',
-    src: '/images/projects/stock-cv-wf-boxplot.png',
-    caption: 'Five time-ordered folds used before holdout testing',
-  },
-  {
-    title: 'Calibration',
-    src: '/images/projects/stock-logistic-calibration.png',
-    caption: 'Probability calibration check for Logistic Regression',
-  },
-  {
-    title: 'Timeline',
-    src: '/images/projects/stock-logistic-timeline.png',
-    caption: 'Test-period predicted probability timeline',
-  },
-]
-
-function StockAnalysisApp({ project }: { project: Project }) {
-  return (
-    <section
-      id="stock-analysis-app"
-      className="mt-8 scroll-mt-24 border-y border-cyan-300/20 bg-slate-950/80 py-8"
-      aria-labelledby="stock-analysis-app-title"
-    >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-100">
-              <Activity size={14} aria-hidden="true" />
-              Deployed Analysis App
-            </div>
-            <h3 id="stock-analysis-app-title" className="mt-4 text-3xl font-semibold text-white">
-              {project.title}
-            </h3>
-            <p className="mt-3 text-sm leading-7 text-slate-300">
-              A portfolio dashboard for reviewing the AAPL stock-direction ML
-              workflow: public OHLCV data, lag-safe technical features,
-              chronological validation, model comparison, and saved diagnostic
-              outputs from the rebuilt assignment project.
-            </p>
-          </div>
-          <a
-            href={project.repositoryUrl}
-            aria-label={`Open ${project.title} GitHub repository`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/15 px-4 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-200"
-          >
-            GitHub Repository
-            <GitBranch size={18} aria-hidden="true" />
-          </a>
-        </div>
-
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {[
-            ['Dataset', 'AAPL OHLCV, 2021-07-15 to 2025-07-15'],
-            ['Features', 'Returns, MA, momentum, volatility, RSI14, volume z-score'],
-            ['Validation', 'Chronological split plus 5-fold walk-forward CV'],
-          ].map(([label, value]) => (
-            <div key={label} className="rounded-lg border border-white/10 bg-white/[0.04] p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">
-                {label}
-              </p>
-              <p className="mt-2 text-sm leading-6 text-slate-200">{value}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-6 overflow-hidden rounded-lg border border-white/10 bg-slate-900/70">
-          <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
-            <Table2 size={18} className="text-cyan-200" aria-hidden="true" />
-            <p className="text-sm font-semibold text-white">Saved Test Results</p>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="min-w-[780px] w-full text-left text-sm">
-              <thead className="bg-white/[0.04] text-xs uppercase tracking-[0.12em] text-slate-400">
-                <tr>
-                  {['Model', 'ACC', 'F1', 'ROC AUC', 'PR AUC', 'Brier', 'Tau', 'Note'].map(
-                    (heading) => (
-                      <th key={heading} className="px-4 py-3 font-semibold">
-                        {heading}
-                      </th>
-                    ),
-                  )}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/10">
-                {stockMetrics.map((metric) => (
-                  <tr key={metric.model} className="text-slate-200">
-                    <td className="px-4 py-4 font-semibold text-white">{metric.model}</td>
-                    <td className="px-4 py-4">{metric.acc}</td>
-                    <td className="px-4 py-4">{metric.f1}</td>
-                    <td className="px-4 py-4">{metric.roc}</td>
-                    <td className="px-4 py-4">{metric.pr}</td>
-                    <td className="px-4 py-4">{metric.brier}</td>
-                    <td className="px-4 py-4">{metric.threshold}</td>
-                    <td className="px-4 py-4 text-slate-300">{metric.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div className="mt-6 grid gap-4 lg:grid-cols-2">
-          {stockDiagnostics.map((item) => (
-            <figure
-              key={item.title}
-              className="overflow-hidden rounded-lg border border-white/10 bg-slate-900/70"
-            >
-              <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
-                <LineChart size={18} className="text-cyan-200" aria-hidden="true" />
-                <figcaption className="text-sm font-semibold text-white">
-                  {item.title}
-                </figcaption>
-              </div>
-              <img
-                src={item.src}
-                alt={`${item.title} diagnostic plot for AAPL Stock Direction Prediction`}
-                className="aspect-[16/10] w-full bg-white object-contain p-2"
-              />
-              <p className="px-4 pb-4 pt-2 text-sm leading-6 text-slate-300">
-                {item.caption}
-              </p>
-            </figure>
-          ))}
-        </div>
-
-        <div className="mt-6 rounded-lg border border-amber-300/20 bg-amber-300/[0.06] p-4">
-          <p className="text-sm leading-7 text-amber-100">
-            Limitation: the saved thresholded predictions classify every test
-            sample as upward movement. This dashboard presents the project as a
-            transparent ML evaluation workflow, not a production trading signal.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 export function FeaturedProjects() {
   const [openProject, setOpenProject] = useState(projects[0]?.title ?? '')
   const videoProject = projects.find((project) => project.demoType === 'video')
-  const stockProject = projects.find((project) => project.id === 'stock-direction-prediction')
 
   return (
     <MotionSection id="projects" className="border-y border-white/5 bg-white/[0.02]">
@@ -510,7 +327,6 @@ export function FeaturedProjects() {
           </article>
         ))}
       </div>
-      {stockProject && <StockAnalysisApp project={stockProject} />}
       {videoProject && <TennisVideoDemo project={videoProject} />}
     </MotionSection>
   )

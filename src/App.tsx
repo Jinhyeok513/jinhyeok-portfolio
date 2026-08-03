@@ -5,6 +5,7 @@ import { FeaturedProjects } from './components/FeaturedProjects'
 import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
+import { StockAnalysisDashboard } from './components/StockAnalysisDashboard'
 import { TechnicalSkills } from './components/TechnicalSkills'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <About />
         <TechnicalSkills />
         <FeaturedProjects />
+        <StockAnalysisDashboard />
         <EducationExperience />
         <Contact />
       </main>
