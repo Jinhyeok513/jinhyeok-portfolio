@@ -368,23 +368,23 @@ export const projects: Project[] = [
     liveDemoUrl: '',
   },
   {
-    id: 'project-management-case-study',
-    slug: 'project-management-case-study',
-    title: 'Event Management System Project Plan - Team Lead',
+    id: 'ems',
+    slug: 'ems',
+    title: 'EMS',
     summary:
-      'Sanitised academic project-management case study covering WBS, Gantt scheduling, risks, budget, resources, and stakeholder planning.',
+      'Project-management case study for planning NEC\'s Event Management System for the 2027 Sydney Festival.',
     description:
-      'A portfolio-safe case study reconstructed from a UTS Project Management team assignment without publishing the original report or workbook.',
-    image: '/images/projects/project-management-case-study.png',
-    imageStatus: 'Sanitised visual created from verified project metrics',
+      'A corrected public package with WBS, AON logic, Gantt scheduling, validation notes, and source artifacts for an academic EMS planning scenario.',
+    image: '/images/projects/ems-gantt-preview.png',
+    imageStatus: 'Corrected Gantt baseline showing EMS readiness by 30 Nov 2026',
     overview:
-      'Academic project-management case study for a proposed Event Management System supporting a major Sydney festival scenario, led by Jinhyeok Kim in a seven-member team.',
+      'Project Management case study for how PMP would plan an integrated Event Management System for Nouveau Event Creations to operate the 2027 Sydney Festival.',
     problemDefinition:
-      'The team needed to turn a complex event-technology scenario into a credible delivery plan covering scope, stakeholders, communication, risks, quality, budget, resources, dependencies, and change control without implying the system was actually built.',
+      'NEC needed a credible delivery plan for an EMS integrating registration, ticketing, performance scheduling, budget analytics, security management, vendor coordination, and operational reporting before the 2027 Sydney Festival.',
     myContribution: [
-      'Led the seven-member academic team by setting direction, assigning tasks, guiding section owners, reviewing deliverables, and integrating the final report.',
-      'Coordinated a WBS and Excel-based schedule containing more than 100 tasks, dependencies, milestones, durations, float, and critical-path indicators.',
-      'Reviewed and connected project sections covering stakeholder management, risk, budget, human resources, scope, quality, vendor coordination, and change control.',
+      'Worked from the Project Management Professionals Pty Ltd perspective to structure the EMS scope, stakeholders, communication plan, risks, budget assumptions, resources, WBS, AON dependencies, and Gantt baseline.',
+      'Reviewed the supplied report, Gantt, AON, and WBS artifacts, then corrected public-facing schedule issues where the source Gantt exceeded the required 30 November 2026 readiness date.',
+      'Rebuilt recruiter-readable WBS/Gantt outputs and validation notes while preserving the original assignment artifacts for traceability.',
     ],
     techStack: [
       'Microsoft Excel',
@@ -405,20 +405,22 @@ export const projects: Project[] = [
       'PowerPoint',
     ],
     keyResults: [
-      'Academic simulation with a proposed AUD 1.5 million budget, 18-month delivery plan, 100+ tasks, 5 major phases, and 5% contingency.',
-      'Original 68-page report and Excel workbook are intentionally not public because they contain student details and jointly authored assessment material.',
-      'Portfolio case study focuses on leadership, planning, Excel scheduling, risk thinking, reporting, and project coordination rather than claiming real client delivery.',
+      'Corrected planning baseline runs from 15 July 2025 to 30 November 2026, matching the report deadline for EMS readiness before the 2027 Sydney Festival.',
+      'Public package includes a corrected WBS/Gantt workbook, recovered original WBS CSV, validation report, AON logic, original source artifacts, and a detailed GitHub README.',
+      'The case study is clearly framed as an academic Project Management simulation, not a claim that NEC commissioned or deployed a real EMS.',
     ],
-    repositoryUrl: '',
-    demoUrl: '/case-studies/project_management_case_study.md',
+    repositoryUrl:
+      'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/ems-project-management-case-study',
+    demoUrl: '/case-studies/ems.md',
     demoType: 'live-app',
     demoLabel: 'Case Study',
-    repositoryStatus: 'unavailable',
+    repositoryStatus: 'available',
     deploymentStatus:
-      'Public site uses a fresh sanitised summary only; original assessment files are not linked.',
-    accessibleLabel: 'Open Event Management System Project Plan case study document',
-    githubUrl: '',
-    liveDemoUrl: '',
+      'Portfolio card shows the corrected Gantt visual and links to the public EMS project package in GitHub once the portfolio branch is published.',
+    accessibleLabel: 'Open EMS project-management case study document',
+    githubUrl:
+      'https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/ems-project-management-case-study',
+    liveDemoUrl: 'https://jinhyeok-portfolio-amber.vercel.app/case-studies/ems.md',
   },
 ]
 
