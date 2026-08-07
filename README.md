@@ -27,6 +27,8 @@ Single-page AI and data portfolio website for Jinhyeok Kim. The site presents ve
 - Portfolio: https://jinhyeok-portfolio-amber.vercel.app
 - AAPL Stock Dashboard: https://jinhyeok-portfolio-amber.vercel.app/#stock-analysis-app
 - AAPL Stock Source Code: https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/stock-market-direction-prediction
+- EMS Case Study: https://jinhyeok-portfolio-amber.vercel.app/case-studies/ems.md
+- EMS Project Package: https://github.com/Jinhyeok513/jinhyeok-portfolio/tree/main/projects/ems-project-management-case-study
 
 ## Project Structure
 
@@ -38,6 +40,7 @@ Single-page AI and data portfolio website for Jinhyeok Kim. The site presents ve
 - `public/case-studies`: public Markdown copies of sanitised portfolio case studies
 - `docs/career`: editable Resume/CV package, evidence notes, and case-study source files
 - `projects/stock-market-direction-prediction`: public-ready Stock ML project rebuilt from assignment evidence
+- `projects/ems-project-management-case-study`: corrected EMS project-management case study package with WBS, Gantt, AON logic, validation notes, and source artifacts
 
 ## Local Development
 
@@ -64,5 +67,5 @@ npm run build
 - Gym AI Trainer is linked to the public Vercel app and uses its documented 32 MB / 30-second public demo upload flow.
 - The Tennis project links to the existing public repository and embeds a derived HTML5 tracking-result video generated from the repository pipeline.
 - AAPL Stock Direction Prediction is included as an embedded analysis dashboard with code, results, diagnostic plots, dataset notes, and limitations.
-- The Event Management System Project Plan is presented as a sanitised academic case study; the original report and workbook are not public.
+- EMS is presented as an academic Project Management case study for NEC's 2027 Sydney Festival scenario, with corrected public WBS/Gantt outputs and validation notes linked from the portfolio card.
 - The public resume download points to `public/resume/Jinhyeok_Kim_Master_Resume.pdf`.

@@ -1,0 +1,35 @@
+Task ID,WBS,Task,Phase,Workstream,Owner,Duration (days),Start,Finish,Predecessors,Successors,Deliverable,Milestone
+EMS-001,1.1.1,Confirm NEC/RAH objectives and EMS success criteria,Initiation and planning,Governance,Project Director,5,2025-07-15,2025-07-20,-,1.1.2,Approved business objectives and MOV,No
+EMS-002,1.1.2,Map stakeholders and communication needs,Initiation and planning,Stakeholder management,Project Director,7,2025-07-20,2025-07-27,1.1.1,1.1.3,Stakeholder register and communication matrix,No
+EMS-003,1.1.3,Define EMS project charter,Initiation and planning,Governance,Project Director,8,2025-07-27,2025-08-04,1.1.2,1.2.1,Project charter,No
+EMS-004,1.2.1,"Create scope baseline for registration, ticketing, schedule, budget, and security modules",Initiation and planning,Scope,System Architect,10,2025-08-04,2025-08-14,1.1.3,1.2.2,Scope statement and exclusions,No
+EMS-005,1.2.2,Develop WBS dictionary and acceptance criteria,Initiation and planning,Scope,Scrum Master / Agile Coach,7,2025-08-14,2025-08-21,1.2.1,1.3.1,WBS dictionary,No
+EMS-006,1.3.1,"Build risk, quality, procurement, and change-control plans",Initiation and planning,Controls,Operations Manager,12,2025-08-21,2025-09-02,1.2.2,1.4.1,Integrated management control plan,No
+EMS-007,1.4.1,Baseline budget and resource plan within AUD 1.5M cap,Initiation and planning,Cost and resources,Project Director,8,2025-09-02,2025-09-10,1.3.1,1.5.1,Budget and resource baseline,No
+M-008,1.5.1,Milestone: planning baseline approved,Initiation and planning,Milestone,PMP Steering Group,0,2025-09-10,2025-09-10,1.4.1,2.1.1,Planning sign-off,Yes
+EMS-009,2.1.1,Define EMS solution architecture and integration map,Design and development,Architecture,System Architect,15,2025-09-10,2025-09-25,1.5.1,"2.1.2, 2.1.3",Architecture baseline,No
+EMS-010,2.1.2,"Design data model, privacy controls, and cybersecurity architecture",Design and development,Architecture,System Architect,12,2025-09-25,2025-10-07,2.1.1,"2.2.1, 2.2.3, 2.2.4, 2.2.5",Security and data design,No
+EMS-011,2.1.3,"Prepare UI/UX prototypes for attendee, vendor, staff, and NEC admin flows",Design and development,Experience design,UI/UX Designer,20,2025-09-25,2025-10-15,2.1.1,"2.2.1, 2.2.3",Prototype set,No
+EMS-012,2.2.1,Build online registration module,Design and development,Core platform,Frontend Developer,35,2025-10-15,2025-11-19,"2.1.2, 2.1.3",2.2.2,Registration workflow,No
+EMS-013,2.2.2,"Build ticketing, payment, QR/RFID validation, and entry scanning module",Design and development,Core platform,Ticketing System Specialist,70,2025-11-19,2026-01-28,2.2.1,2.3.1,Ticketing and access-control workflow,No
+EMS-014,2.2.3,Build performance scheduling and rehearsal management module,Design and development,Core platform,Backend Developer,45,2025-10-15,2025-11-29,"2.1.2, 2.1.3",2.3.1,Schedule management workflow,No
+EMS-015,2.2.4,Build budget analytics dashboard and reporting views,Design and development,Analytics,Database Administrator,40,2025-10-07,2025-11-16,2.1.2,2.3.1,Budget analytics module,No
+EMS-016,2.2.5,Build security management dashboard and incident reporting workflow,Design and development,Security,Cybersecurity Engineer,55,2025-10-07,2025-12-01,2.1.2,2.3.1,Security dashboard,No
+EMS-017,2.3.1,"Integrate vendor APIs, mobile app views, and NEC admin portal",Design and development,Integration,API Engineer,40,2026-01-28,2026-03-09,"2.2.2, 2.2.3, 2.2.4, 2.2.5",2.4.1,Integrated EMS platform,No
+EMS-018,2.4.1,Complete internal sprint reviews and defect triage,Design and development,Quality,Scrum Master / Agile Coach,20,2026-03-09,2026-03-29,2.3.1,2.5.1,Sprint review pack,No
+M-019,2.5.1,Milestone: integrated EMS build complete,Design and development,Milestone,PMP Steering Group,0,2026-03-29,2026-03-29,2.4.1,3.1.1,Build completion sign-off,Yes
+EMS-020,3.1.1,Run system integration testing across all EMS modules,Testing and validation,Testing,QA Test Engineer,35,2026-03-29,2026-05-03,2.5.1,"3.1.2, 3.1.3",SIT report,No
+EMS-021,3.1.2,"Run security, privacy, and penetration testing",Testing and validation,Security testing,Security Tester,25,2026-05-03,2026-05-28,3.1.1,3.2.1,Security test report,No
+EMS-022,3.1.3,"Run performance, load, and entry-scanning stress testing",Testing and validation,Performance testing,Performance Test Engineer,20,2026-05-03,2026-05-23,3.1.1,3.2.1,Load-test report,No
+EMS-023,3.2.1,Conduct NEC staff UAT and festival operations rehearsal,Testing and validation,User acceptance,Operations Manager,25,2026-05-28,2026-06-22,"3.1.2, 3.1.3",3.2.2,UAT sign-off log,No
+EMS-024,3.2.2,Resolve priority defects and update training materials,Testing and validation,Defect remediation,Scrum Master / Agile Coach,20,2026-06-22,2026-07-12,3.2.1,3.3.1,Defect closure and training pack,No
+M-025,3.3.1,Milestone: EMS validated for deployment,Testing and validation,Milestone,PMP Steering Group,0,2026-07-12,2026-07-12,3.2.2,4.1.1,Deployment approval,Yes
+EMS-026,4.1.1,Prepare cloud production environment and monitoring,Deployment and readiness,Release,DevOps Engineer,20,2026-07-12,2026-08-01,3.3.1,4.1.2,Production environment,No
+EMS-027,4.1.2,"Migrate configuration, event data, ticket templates, and vendor records",Deployment and readiness,Release,Database Administrator,15,2026-08-01,2026-08-16,4.1.1,4.2.1,Migration checklist,No
+EMS-028,4.2.1,"Train NEC operations, security, ticketing, and vendor-support users",Deployment and readiness,Training,Operations Manager,25,2026-08-16,2026-09-10,4.1.2,4.3.1,Training completion register,No
+EMS-029,4.3.1,Run production pilot and go-live rehearsal,Deployment and readiness,Release,Project Director,20,2026-09-10,2026-09-30,4.2.1,4.4.1,Pilot readiness report,No
+EMS-030,4.4.1,Operate final contingency and defect-remediation window,Deployment and readiness,Controls,PMP Delivery Team,45,2026-09-30,2026-11-14,4.3.1,4.5.1,Readiness reserve log,No
+M-031,4.5.1,Milestone: EMS ready for 2027 Sydney Festival operations,Deployment and readiness,Milestone,NEC Sponsor,0,2026-11-14,2026-11-14,4.4.1,5.1.1,Operational readiness sign-off,Yes
+EMS-032,5.1.1,"Complete handover, lessons learned, and support transition",Closeout,Handover,Project Director,10,2026-11-14,2026-11-24,4.5.1,5.2.1,Handover pack,No
+EMS-033,5.2.1,Archive project evidence and final management report,Closeout,Reporting,Scrum Master / Agile Coach,6,2026-11-24,2026-11-30,5.1.1,5.3.1,Final report archive,No
+M-034,5.3.1,Milestone: PMP final submission complete,Closeout,Milestone,PMP Steering Group,0,2026-11-30,2026-11-30,5.2.1,-,Final submission sign-off,Yes

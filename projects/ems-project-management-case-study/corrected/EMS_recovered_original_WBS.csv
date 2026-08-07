@@ -1,0 +1,175 @@
+WBS ID,Original task ID,Task description,Planned Duration (days),Predecessor,Following,Role,Resources (people),Effort (hrs),Hourly Rate (AUD),Total Task Cost (AUD),Explanation
+1,,Project initiation and planning phase,,,,,,,,,This task supports project initiation and planning phase as part of the workflow.
+1.1,,Activity definition and basic setup,,,,,,,,,The purpose here is to manage activity definition and basic setup.
+1.1.1,T001,Identify NEC event sponsors,16,,"1.1.2, 1.1.8, 1.1.11","Project Director, Vendor Relations Manager",4,58,108,6281,The team is expected to identify nec event sponsors.
+1.1.2,T002,Draft EMS Festival budget,22,1.1.1,"1.1.3, 1.1.5, 1.1.6, 1.1.7","Project Director, Operations Manager",1,128,54,6909,"To ensure progress, this task will draft ems festival budget."
+1.1.3,T003,Book NEC festival venue,24,1.1.2,"1.1.4, 1.1.10","Project Director, Event Coordinator",1,117,47,5539,This step requires the team to book nec festival venue.
+1.1.4,T004,Develop project charter,16,1.1.3,"1.1.8, 1.1.9","Project Director, Operations Manager",2,138,60,8305,An important action here is to develop project charter.
+1.1.5,T005,Develop project charter,9,1.1.2,-,"Project Director, Operations Manager",2,138,60,8305,One of the key steps here is to develop project charter.
+1.1.6,T006,Define project scope statement,24,1.1.2,1.1.7,"Project Director, System Architect, Scrum Master/Agile Coach",4,74,91,6767,This step requires the team to define project scope statement.
+1.1.7,T007,Define project scope statement,10,"1.1.2,1.1.6","1.1.10, 1.1.12","Project Director, System Architect, Scrum Master/Agile Coach",4,74,91,6767,The team is expected to define project scope statement.
+1.1.8,T008,Identify project stakeholders,16,"1.1.4,1.1.1",1.1.9,"Project Director, Event Coordinator",1,74,58,4291,An important action here is to identify project stakeholders.
+1.1.9,T009,Create stakeholder communication plan,24,"1.1.4,1.1.8",-,"Project Director, Scrum Master/Agile Coach",2,144,66,9564,The purpose here is to manage create stakeholder communication plan.
+1.1.10,T010,Develop Risk Management Plan,22,"1.1.3,1.1.7",1.1.11,"Operations Manager, Cybersecurity Engineer, System Architect",3,207,93,19189,The team is expected to develop risk management plan.
+1.1.11,T011,Define change management process,16,"1.1.10,1.1.1",-,"Operations Manager, Scrum Master/Agile Coach, System Architect",1,144,45,6525,"To ensure progress, this task will define change management process."
+1.1.12,M001,[Milestone] Complete Project Planning Phase,11,1.1.7,1.2.1,"Project Director, Operations Manager, Scrum Master/Agile Coach",2,144,61,8719,It helps coordinate [milestone] complete project planning phase within the project.
+1.2,,Security System Phase,,,,,,,,,It helps coordinate security system phase within the project.
+1.2.1,,Security System - Coding Work,19,1.1.12,"1.2.2, 1.2.3, 1.2.7, 1.2.8, 1.2.11, 1.2.13",,1,27,50,1338,This task supports security system - coding work as part of the workflow.
+1.2.2,T015,Frontend login authentication module,17,1.2.1,"1.2.3, 1.2.4","Frontend Developer, Cybersecurity Engineer, API Engineer",3,128,88,11279,The purpose here is to manage frontend login authentication module.
+1.2.3,T016,Backend encryption for user data,14,"1.2.1,1.2.2","1.2.5, 1.2.9","Backend Developer, Cybersecurity Engineer, Database Administrator",1,191,51,9833,It covers backend encryption for user data in the overall process.
+1.2.4,T017,Token-based session management,5,1.2.2,"1.2.6, 1.2.7, 1.2.9","API Engineer, Backend Developer, Cybersecurity Engineer",1,80,49,3950,This section emphasizes token-based session management to maintain progress.
+1.2.5,T018,API Gateway security policies,9,1.2.3,1.2.10,"API Engineer, Cybersecurity Engineer, System Architect",1,133,54,7206,The purpose here is to manage api gateway security policies.
+1.2.6,M002,[Milestone] Complete Coding Phase,8,1.2.4,-,"Operations Manager, Scrum Master/Agile Coach, System Architect",2,149,60,8933,It covers [milestone] complete coding phase in the overall process.
+1.2.7,,Security System - Testing,15,"1.2.4,1.2.1",1.2.10,,2,159,62,9872,This task supports security system - testing as part of the workflow.
+1.2.8,T019,Unit Testing of modules,16,1.2.1,-,"QA Test Engineer, Frontend Developer, Backend Developer",1,165,50,8332,It helps coordinate unit testing of modules within the project.
+1.2.9,T020,Integration Testing across systems,10,"1.2.3,1.2.4",1.2.12,"QA Test Engineer, System Architect, DevOps Engineer",2,101,64,6502,It covers integration testing across systems in the overall process.
+1.2.10,T021,Security Vulnerability Scan,19,"1.2.5,1.2.7",-,"Security Tester, Cybersecurity Engineer, API Engineer",1,96,57,5451,The purpose here is to manage security vulnerability scan.
+1.2.11,T022,User Acceptance Testing (UAT),6,1.2.1,-,"UAT Specialist, QA Test Engineer, Frontend Developer",2,32,61,1946,This task supports user acceptance testing (uat) as part of the workflow.
+1.2.12,T023,Penetration Testing,10,1.2.9,-,"Security Tester, Cybersecurity Engineer, Emergency Response Specialist",1,213,53,11227,This task supports penetration testing as part of the workflow.
+1.2.13,M003,[Milestone] Complete Security System Testing,21,1.2.1,1.3.1,"Operations Manager, Cybersecurity Engineer, Security Tester",2,53,66,3513,It helps coordinate [milestone] complete security system testing within the project.
+1.3,,Logistics and partner management,,,,,,,,,It helps coordinate logistics and partner management within the project.
+1.3.1,T024,Plan transportation for artists,23,1.2.13,1.3.2,"Event Coordinator, Production Manager",4,64,105,6732,The project team will need to plan transportation for artists.
+1.3.2,T025,Negotiate vendor partnerships,9,1.3.1,1.3.3,"Vendor Relations Manager, Project Director",1,112,48,5327,This task supports negotiate vendor partnerships as part of the workflow.
+1.3.3,T026,Outline sponsorship package,11,1.3.2,1.4.1,"Project Director, Vendor Relations Manager, Event Coordinator",1,37,46,1701,The purpose here is to manage outline sponsorship package.
+1.4,,Market analysis and research,,,,,,,,,It covers market analysis and research in the overall process.
+1.4.1,T029,Develop NEC internal project timeline,10,1.3.3,"1.4.2, 1.4.3","Operations Manager, Scrum Master/Agile Coach, System Architect",1,154,50,7634,This activity aims to develop nec internal project timeline.
+1.4.2,T031,Survey potential attendees,24,1.4.1,-,"UI/UX Designer, Frontend Developer, Mobile App Developer",3,122,92,11237,The purpose here is to manage survey potential attendees.
+1.4.3,T032,Estimate ticket demand,15,1.4.1,1.4.4,"Ticketing System Specialist, Database Administrator, Event Coordinator",2,165,64,10586,This task supports estimate ticket demand as part of the workflow.
+1.4.4,T033,Assess site accessibility,19,1.4.3,1.5.1,"Production Manager, Network Engineer, System Architect",2,53,60,3165,The purpose here is to manage assess site accessibility.
+1.5,,Site and operation planning,,,,,,,,,This section emphasizes site and operation planning to maintain progress.
+1.5.1,T034,Plan waste management needs,14,1.4.4,"1.5.2, 1.5.3, 1.5.5","Production Manager, Event Coordinator",1,202,46,9195,This step requires the team to plan waste management needs.
+1.5.2,T035,Identify parking logistics,16,1.5.1,"1.5.4, 1.5.5","Production Manager, Event Coordinator",3,90,98,8796,"To ensure progress, this task will identify parking logistics."
+1.5.3,T036,Evaluate food vendor capacities,25,1.5.1,-,"Vendor Relations Manager, Production Manager",4,106,96,10226,This step requires the team to evaluate food vendor capacities.
+1.5.4,T037,Forecast weather contingency plans,8,1.5.2,1.5.7,"Production Manager, Event Coordinator, Operations Manager",2,207,67,13927,The purpose here is to manage forecast weather contingency plans.
+1.5.5,T038,Prioritize family zone activities,7,"1.5.1,1.5.2",1.5.6,"Event Coordinator, Production Manager",1,37,50,1838,This task supports prioritize family zone activities as part of the workflow.
+1.5.6,T039,Confirm security staffing requirements,8,1.5.5,-,"Operations Manager, Cybersecurity Engineer, Emergency Response Specialist",1,27,53,1426,"To ensure progress, this task will confirm security staffing requirements."
+1.5.7,T040,Analyze entry point congestion risks,10,1.5.4,2.1.1,"Operations Manager, RFID Technology Specialist, System Architect",3,48,89,4256,This section emphasizes analyze entry point congestion risks to maintain progress.
+2,,Design and development phase,,,,,,,,,The purpose here is to manage design and development phase.
+2.1,,Branding and Visual design,,,,,,,,,It covers branding and visual design in the overall process.
+2.1.1,T041,Create EMS Festival logo,21,1.5.7,"2.1.2, 2.1.3","UI/UX Designer, Event Coordinator",1,128,50,6400,The purpose here is to manage create ems festival logo.
+2.1.2,T042,Design event banners,13,2.1.1,-,"UI/UX Designer, Event Coordinator",1,80,50,4000,The purpose here is to manage design event banners.
+2.1.3,T043,Design mobile app UI,6,2.1.1,2.2.1,"UI/UX Designer, Mobile App Developer, Frontend Developer",1,159,55,8745,It covers design mobile app ui in the overall process.
+2.2,,Technical system development,,,,,,,,,It covers technical system development in the overall process.
+2.2.1,T044,Develop Festival Mobile App,10,2.1.3,"2.2.2, 2.2.3, 2.2.7, 2.2.10","Mobile App Developer, Frontend Developer, UI/UX Designer",1,213,50,10650,This step requires the team to develop festival mobile app.
+2.2.2,T045,Develop Ticket Validation System,17,2.2.1,"2.2.4, 2.2.5","Ticketing System Specialist, Backend Developer, Frontend Developer",1,186,50,9300,The project team will need to develop ticket validation system.
+2.2.3,T046,Develop Event Live-Streaming Platform,8,2.2.1,"2.2.5, 2.2.6","Live Streaming Platform Developer, Frontend Developer, Backend Developer",1,159,50,7950,An important action here is to develop event live-streaming platform.
+2.2.4,T047,Develop online ticketing portal,10,2.2.2,-,"Ticketing System Specialist, Frontend Developer, Backend Developer",1,159,50,7950,The team is expected to develop online ticketing portal.
+2.2.5,T048,Frontend design for ticketing portal,7,"2.2.2,2.2.3",-,"Frontend Developer, UI/UX Designer, Ticketing System Specialist",3,37,80,2946,It covers frontend design for ticketing portal in the overall process.
+2.2.6,T049,Backend integration for ticketing portal,14,2.2.3,2.2.8,"Backend Developer, API Engineer, Ticketing System Specialist",3,170,99,16871,This task supports backend integration for ticketing portal as part of the workflow.
+2.2.7,T050,Ticket purchase process testing,6,2.2.1,2.2.9,"QA Test Engineer, Ticketing System Specialist, Frontend Developer",3,112,94,10571,This task supports ticket purchase process testing as part of the workflow.
+2.2.8,M004,[Milestone] Ticketing Portal Completed,14,2.2.6,-,"Operations Manager, Ticketing System Specialist, System Architect",2,154,71,10957,The purpose here is to manage [milestone] ticketing portal completed.
+2.2.9,T051,Build mobile event app,17,2.2.7,-,"Mobile App Developer, Frontend Developer, UI/UX Designer",1,133,50,6650,This section emphasizes build mobile event app to maintain progress.
+2.2.10,T052,Develop artist scheduling platform,12,2.2.1,2.3.1,"Backend Developer, Frontend Developer, Database Administrator",1,133,50,6650,This activity aims to develop artist scheduling platform.
+2.3,,Security implementation,,,,,,,,,The purpose here is to manage security implementation.
+2.3.1,T053,Implement Cybersecurity Protocols,6,2.2.10,"2.3.2, 2.3.3, 2.3.4, 2.3.5","Cybersecurity Engineer, Security Tester, System Architect",1,106,50,5300,This activity aims to implement cybersecurity protocols.
+2.3.2,T054,Set up Emergency IT Response Team,11,2.3.1,2.3.3,"Emergency Response Specialist, Cybersecurity Engineer, Operations Manager",1,80,50,4000,It covers set up emergency it response team in the overall process.
+2.3.3,T055,Create emergency alert system,12,"2.3.1,2.3.2",-,"Emergency Response Specialist, Frontend Developer, Backend Developer",1,80,50,4000,This section emphasizes create emergency alert system to maintain progress.
+2.3.4,T056,Test emergency alert system,19,2.3.1,2.3.6,"QA Test Engineer, Emergency Response Specialist, Security Tester",1,197,58,11509,It covers test emergency alert system in the overall process.
+2.3.5,T057,Emergency response drill,9,2.3.1,-,"Emergency Response Specialist, Operations Manager, Security Tester",1,69,54,3724,This section emphasizes emergency response drill to maintain progress.
+2.3.6,M005,[Milestone] Emergency System Testing Completed,8,2.3.4,2.4.1,"Operations Manager, Emergency Response Specialist, Cybersecurity Engineer",3,207,98,20296,This section emphasizes [milestone] emergency system testing completed to maintain progress.
+2.4,,Physical Design and layout,,,,,,,,,This section emphasizes physical design and layout to maintain progress.
+2.4.1,T058,Prepare venue signage,23,2.3.6,"2.4.2, 2.4.5, 2.4.7","UI/UX Designer, Production Manager",1,80,50,4000,It helps coordinate prepare venue signage within the project.
+2.4.2,T059,Finalize artist stage layouts,18,2.4.1,"2.4.3, 2.4.4, 2.4.6, 2.4.9","Production Manager, Event Coordinator",1,106,50,5300,This activity aims to finalize artist stage layouts.
+2.4.3,T060,Design backstage credentials,16,2.4.2,2.4.8,"UI/UX Designer, RFID Technology Specialist, Security Tester",2,64,52,3328,This task supports design backstage credentials as part of the workflow.
+2.4.4,T061,Draft volunteer orientation guide,24,2.4.2,-,"Operations Manager, Event Coordinator",1,80,50,4000,This activity aims to draft volunteer orientation guide.
+2.4.5,T062,Create festival merchandise designs,20,2.4.1,"2.4.6, 2.4.7","UI/UX Designer, Event Coordinator",2,128,52,6656,It covers create festival merchandise designs in the overall process.
+2.4.6,T063,Design ticket templates,21,"2.4.2,2.4.5",2.4.8,"UI/UX Designer, Ticketing System Specialist",2,64,52,3328,This section emphasizes design ticket templates to maintain progress.
+2.4.7,T064,Set up VIP lounge design,18,"2.4.1,2.4.5",-,"UI/UX Designer, Production Manager, Event Coordinator",2,96,52,4992,This section emphasizes set up vip lounge design to maintain progress.
+2.4.8,T066,Finalize family zone setup,9,"2.4.6,2.4.3",-,"Event Coordinator, Production Manager",1,53,50,2650,This task involves finalize family zone setup.
+2.4.9,T067,Design sponsor activation areas,22,2.4.2,2.5.1,"UI/UX Designer, Vendor Relations Manager, Event Coordinator",2,64,52,3328,It helps coordinate design sponsor activation areas within the project.
+2.5,,System Integration and Infrastructure,,,,,,,,,This task supports system integration and infrastructure as part of the workflow.
+2.5.1,T068,Integrate payment systems,16,2.4.9,"2.5.2, 2.5.3, 2.5.4, 2.5.5, 2.5.7, 2.5.10","System Architect, Backend Developer, API Engineer",1,106,50,5300,This task supports integrate payment systems as part of the workflow.
+2.5.2,T069,Build vendor registration page,18,2.5.1,"2.5.3, 2.5.7, 2.5.8","Frontend Developer, Backend Developer, UI/UX Designer",1,80,50,4000,It covers build vendor registration page in the overall process.
+2.5.3,T070,Assemble RFID wristbands,15,"2.5.2,2.5.1",2.5.6,"RFID Technology Specialist, Production Manager",1,106,50,5300,It covers assemble rfid wristbands in the overall process.
+2.5.4,T072,Set up festival social media accounts,5,2.5.1,2.5.5,"Event Coordinator, UI/UX Designer",1,53,50,2650,It covers set up festival social media accounts in the overall process.
+2.5.5,T073,Develop volunteer portal,16,"2.5.4,2.5.1",-,"Frontend Developer, Backend Developer, UI/UX Designer",1,106,50,5300,The project team will need to develop volunteer portal.
+2.5.6,T074,Install Wi-Fi infrastructure,12,2.5.3,-,"Network Engineer, System Architect, DevOps Engineer",1,80,50,4000,The purpose here is to manage install wi-fi infrastructure.
+2.5.7,T075,Configure entry scanning devices,22,"2.5.2,2.5.1",-,"RFID Technology Specialist, System Architect, Network Engineer",1,80,50,4000,This task supports configure entry scanning devices as part of the workflow.
+2.5.8,T076,Device compatibility checks,14,2.5.2,2.5.9,"QA Test Engineer, RFID Technology Specialist, Mobile App Developer",2,90,59,5332,This section emphasizes device compatibility checks to maintain progress.
+2.5.9,T077,Entry scanning stress tests,19,2.5.8,-,"Performance Test Engineer, QA Test Engineer, RFID Technology Specialist",1,181,48,8677,This task supports entry scanning stress tests as part of the workflow.
+2.5.10,M006,[Milestone] Entry Devices Testing Completed,8,2.5.1,3.1.1,"Operations Manager, RFID Technology Specialist, QA Test Engineer",1,96,46,4385,This task supports [milestone] entry devices testing completed as part of the workflow.
+3,,Testing and validation phase,,,,,,,,,This section emphasizes testing and validation phase to maintain progress.
+3.1,,Technical testing,,,,,,,,,It helps coordinate technical testing within the project.
+3.1.1,T078,Test Festival Mobile App,15,2.5.10,"3.1.2, 3.1.4, 3.1.5","QA Test Engineer, Mobile App Developer, Frontend Developer",1,138,49,6772,This section emphasizes test festival mobile app to maintain progress.
+3.1.2,T079,Validate mobile app navigation flow,6,3.1.1,"3.1.3, 3.1.6, 3.1.7, 3.1.9","QA Test Engineer, Mobile App Developer, UI/UX Designer",2,128,70,8909,This task supports validate mobile app navigation flow as part of the workflow.
+3.1.3,T080,Test edge cases in mobile app login,8,3.1.2,3.1.5,"QA Test Engineer, Mobile App Developer, Cybersecurity Engineer",2,101,63,6362,This task supports test edge cases in mobile app login as part of the workflow.
+3.1.4,T081,Test Ticket Validation System,24,3.1.1,3.1.6,"QA Test Engineer, Ticketing System Specialist, RFID Technology Specialist",2,112,62,6936,This task supports test ticket validation system as part of the workflow.
+3.1.5,T082,Validate ticket scanning under network loss,18,"3.1.3,3.1.1",3.1.10,"QA Test Engineer, Ticketing System Specialist, Network Engineer",1,144,53,7652,This section emphasizes validate ticket scanning under network loss to maintain progress.
+3.1.6,T083,Test Event Live-Streaming Platform,5,"3.1.4,3.1.2","3.1.8, 3.1.9","QA Test Engineer, Live Streaming Platform Developer, Network Engineer",3,154,79,12092,This section emphasizes test event live-streaming platform to maintain progress.
+3.1.7,T084,Measure live streaming latency,16,3.1.2,-,"Performance Test Engineer, Live Streaming Platform Developer, Network Engineer",1,149,57,8497,This section emphasizes measure live streaming latency to maintain progress.
+3.1.8,T085,Test ticketing platform,10,3.1.6,-,"QA Test Engineer, Ticketing System Specialist, Frontend Developer",1,170,46,7840,This task supports test ticketing platform as part of the workflow.
+3.1.9,T086,Conduct load test on festival app,16,"3.1.6,3.1.2",-,"Performance Test Engineer, Mobile App Developer, Backend Developer",3,96,100,9568,The project team will need to conduct load test on festival app.
+3.1.10,T087,Test Wi-Fi coverage,5,3.1.5,3.2.1,"Network Engineer, QA Test Engineer, System Architect",2,21,69,1445,It helps coordinate test wi-fi coverage within the project.
+3.2,,Safety test,,,,,,,,,It helps coordinate safety test within the project.
+3.2.1,T089,Conduct Penetration Testing,18,3.1.10,"3.2.2, 3.2.3, 3.2.4","Security Tester, Cybersecurity Engineer, System Architect",2,64,69,4443,This part of the project focuses on how to conduct penetration testing.
+3.2.2,T090,Execute penetration testing scripts,9,3.2.1,"3.2.3, 3.2.4","Security Tester, Cybersecurity Engineer, API Engineer",1,144,56,8006,The purpose here is to manage execute penetration testing scripts.
+3.2.3,T092,Perform emergency drill,11,"3.2.1,3.2.2",3.2.5,"Emergency Response Specialist, Operations Manager, Security Tester",1,58,57,3281,The purpose here is to manage perform emergency drill.
+3.2.4,T093,Evacuation drill test under emergency,13,"3.2.1,3.2.2",-,"Emergency Response Specialist, Operations Manager, Production Manager",1,144,46,6640,It covers evacuation drill test under emergency in the overall process.
+3.2.5,T094,Conduct mock security breach drill,20,3.2.3,3.3.1,"Security Tester, Cybersecurity Engineer, Emergency Response Specialist",4,74,99,7323,This activity aims to conduct mock security breach drill.
+3.3,,Operational testing,,,,,,,,,The purpose here is to manage operational testing.
+3.3.1,T095,Simulate entry scanning,23,3.2.5,"3.3.2, 3.3.4, 3.3.7","QA Test Engineer, RFID Technology Specialist, Ticketing System Specialist",3,58,97,5602,It helps coordinate simulate entry scanning within the project.
+3.3.2,T096,Test RFID scanner multiple entries,7,3.3.1,"3.3.3, 3.3.6","QA Test Engineer, RFID Technology Specialist, Ticketing System Specialist",2,202,67,13479,The purpose here is to manage test rfid scanner multiple entries.
+3.3.3,T097,Pilot vendor onboarding system,23,3.3.2,3.3.5,"QA Test Engineer, Frontend Developer, Backend Developer",3,202,83,16821,This section emphasizes pilot vendor onboarding system to maintain progress.
+3.3.4,T098,Simulate vendor onboarding failures,11,3.3.1,3.3.5,"QA Test Engineer, Frontend Developer, Backend Developer",2,191,59,11248,The purpose here is to manage simulate vendor onboarding failures.
+3.3.5,T099,Test VIP access control,9,"3.3.3,3.3.4",3.3.7,"QA Test Engineer, RFID Technology Specialist, Security Tester",2,43,62,2681,This section emphasizes test vip access control to maintain progress.
+3.3.6,T100,Validate RFID wristband scanners,11,3.3.2,-,"RFID Technology Specialist, QA Test Engineer, Ticketing System Specialist",2,165,63,10321,This section emphasizes validate rfid wristband scanners to maintain progress.
+3.3.7,T101,Validate scanner integration with ticketing,25,"3.3.1,3.3.5",4.1.1,"QA Test Engineer, RFID Technology Specialist, Ticketing System Specialist",1,53,56,2965,This section emphasizes validate scanner integration with ticketing to maintain progress.
+4,,Activity deployment and execution phase,,,,,,,,,This task supports activity deployment and execution phase as part of the workflow.
+4.1,,Site Preparation,,,,,,,,,This task supports site preparation as part of the workflow.
+4.1.1,T102,Launch ticket sales,14,3.3.7,"4.1.2, 4.1.3, 4.1.6","Ticketing System Specialist, Frontend Developer, Backend Developer",1,80,52,4166,This task supports launch ticket sales as part of the workflow.
+4.1.2,T104,Verify ticket QR compatibility,14,4.1.1,"4.1.3, 4.1.4","QA Test Engineer, Ticketing System Specialist, Mobile App Developer",1,191,56,10639,It covers verify ticket qr compatibility in the overall process.
+4.1.3,T105,Deploy site signage,17,"4.1.1,4.1.2","4.1.4, 4.1.5, 4.1.8, 4.1.10","Production Manager, Event Coordinator",4,138,109,15045,This task supports deploy site signage as part of the workflow.
+4.1.4,T106,Install family zone activities,18,"4.1.3,4.1.2",-,"Production Manager, Event Coordinator",4,144,104,14980,The purpose here is to manage install family zone activities.
+4.1.5,T107,Deploy food vendor tents,11,4.1.3,-,"Production Manager, Vendor Relations Manager",4,213,109,23275,It covers deploy food vendor tents in the overall process.
+4.1.6,T108,Assemble stage structures,14,4.1.1,"4.1.7, 4.1.8, 4.1.9","Production Manager, Operations Manager",1,202,52,10587,It covers assemble stage structures in the overall process.
+4.1.7,T109,Safety inspection for stage area,13,4.1.6,-,"Production Manager, Operations Manager, Emergency Response Specialist",1,133,53,7028,The purpose here is to manage safety inspection for stage area.
+4.1.8,T110,Set up first aid tents,16,"4.1.3,4.1.6",4.1.9,"Production Manager, Emergency Response Specialist",4,159,101,16010,This section emphasizes set up first aid tents to maintain progress.
+4.1.9,T111,Prepare artist dressing rooms,18,"4.1.6,4.1.8",-,"Production Manager, Event Coordinator",2,202,58,11789,It covers prepare artist dressing rooms in the overall process.
+4.1.10,T112,Install sponsor booths,11,4.1.3,4.2.1,"Production Manager, Vendor Relations Manager, Event Coordinator",4,21,93,1947,This section emphasizes install sponsor booths to maintain progress.
+4.2,,Personnel and equipment preparation,,,,,,,,,The purpose here is to manage personnel and equipment preparation.
+4.2.1,T113,Deliver staff orientation,23,4.1.10,"4.2.2, 4.2.3, 4.2.4, 4.2.5","Operations Manager, Event Coordinator",3,213,91,19364,This task supports deliver staff orientation as part of the workflow.
+4.2.2,T114,Assign orientation teams to volunteers,10,4.2.1,"4.2.3, 4.2.4","Operations Manager, Event Coordinator",1,90,50,4475,It helps coordinate assign orientation teams to volunteers within the project.
+4.2.3,T115,Distribute emergency contact cards,5,"4.2.1,4.2.2",-,"Emergency Response Specialist, Event Coordinator",1,32,53,1684,It covers distribute emergency contact cards in the overall process.
+4.2.4,T116,Distribute RFID wristbands,6,"4.2.2,4.2.1",-,"RFID Technology Specialist, Event Coordinator",3,21,98,2051,It covers distribute rfid wristbands in the overall process.
+4.2.5,T117,Install lighting and sound systems,9,4.2.1,4.2.6,"Production Manager, Network Engineer",1,43,49,2096,It covers install lighting and sound systems in the overall process.
+4.2.6,T118,Distribute volunteer uniforms,23,4.2.5,4.3.1,"Event Coordinator, Operations Manager",1,154,51,7879,This section emphasizes distribute volunteer uniforms to maintain progress.
+4.3,,Event operation,,,,,,,,,It helps coordinate event operation within the project.
+4.3.1,T119,Open festival gates,17,4.2.6,"4.3.2, 4.3.3, 4.3.5","Production Manager, Event Coordinator, Operations Manager",4,159,96,15219,It covers open festival gates in the overall process.
+4.3.2,T120,Manage ticket scanning,18,4.3.1,"4.3.4, 4.3.5","RFID Technology Specialist, Ticketing System Specialist, System Architect",2,64,59,3781,This task supports manage ticket scanning as part of the workflow.
+4.3.3,T121,Dry-run RFID ticket scanning,20,4.3.1,4.3.4,"RFID Technology Specialist, Ticketing System Specialist, QA Test Engineer",2,96,62,5958,The purpose here is to manage dry-run rfid ticket scanning.
+4.3.4,T122,Resolve duplicate scans on entry,5,"4.3.3,4.3.2",4.3.7,"RFID Technology Specialist, Ticketing System Specialist, System Architect",1,96,47,4552,The purpose here is to manage resolve duplicate scans on entry.
+4.3.5,T124,Supervise food vendor areas,5,"4.3.1,4.3.2",4.3.6,"Production Manager, Vendor Relations Manager",4,85,110,9367,The purpose here is to manage supervise food vendor areas.
+4.3.6,T127,Handle lost and found,24,4.3.5,-,"Event Coordinator, Operations Manager",3,37,95,3518,This section emphasizes handle lost and found to maintain progress.
+4.3.7,T128,Manage emergency response center,15,4.3.4,4.4.1,"Emergency Response Specialist, Cybersecurity Engineer, Network Engineer",3,175,80,13940,It helps coordinate manage emergency response center within the project.
+4.4,,Real-time management and support,,,,,,,,,It helps coordinate real-time management and support within the project.
+4.4.1,T130,Run backstage operations,19,4.3.7,4.4.2,"Production Manager, Event Coordinator",1,96,57,5483,It helps coordinate run backstage operations within the project.
+4.4.2,T131,Manage VIP lounge access,12,4.4.1,"4.4.3, 4.4.6","RFID Technology Specialist, Security Tester, Event Coordinator",1,170,58,9935,The purpose here is to manage manage vip lounge access.
+4.4.3,T132,Supervise family zone activities,16,4.4.2,"4.4.4, 4.4.7, 4.4.8","Event Coordinator, Production Manager",3,207,83,17171,This section emphasizes supervise family zone activities to maintain progress.
+4.4.4,T133,Monitor real-time security status,12,4.4.3,4.4.5,"Cybersecurity Engineer, Security Tester, Emergency Response Specialist",3,85,78,6609,The purpose here is to manage monitor real-time security status.
+4.4.5,T134,Test CCTV feeds and network latency,19,4.4.4,-,"Network Engineer, Security Tester, System Architect",3,186,81,15010,It helps coordinate test cctv feeds and network latency within the project.
+4.4.6,T135,Calibrate camera positions,20,4.4.2,4.4.8,"Network Engineer, Security Tester, Production Manager",4,53,101,5336,It covers calibrate camera positions in the overall process.
+4.4.7,T136,Conduct daily briefings,12,4.4.3,-,"Operations Manager, Scrum Master/Agile Coach, Production Manager",2,133,69,9237,The team is expected to conduct daily briefings.
+4.4.8,M014,[Milestone] Site Preparation & Execution Complete,7,"4.4.6,4.4.3",5.1.1,"Project Director, Operations Manager, Production Manager",3,165,81,13291,It helps coordinate [milestone] site preparation & execution complete within the project.
+5,,Activity closing and reporting phase,,,,,,,,,The purpose here is to manage activity closing and reporting phase.
+5.1,,Disassembly and cleaning,,,,,,,,,It covers disassembly and cleaning in the overall process.
+5.1.1,T141,Coordinate teardown,7,4.4.8,"5.1.2, 5.1.5","Production Manager, Operations Manager, Event Coordinator",1,74,59,4376,This activity aims to coordinate teardown.
+5.1.2,T142,Inspect venue before teardown,12,5.1.1,"5.1.3, 5.1.5","Production Manager, Operations Manager, Event Coordinator",1,165,50,8225,It helps coordinate inspect venue before teardown within the project.
+5.1.3,T144,Pack RFID scanners,17,5.1.2,5.1.4,"RFID Technology Specialist, Operations Manager",1,191,56,10610,This task supports pack rfid scanners as part of the workflow.
+5.1.4,T145,Dismantle stage structures,16,5.1.3,-,"Production Manager, Operations Manager",2,21,63,1325,It helps coordinate dismantle stage structures within the project.
+5.1.5,T146,Finalize vendor settlements,19,"5.1.1,5.1.2","5.1.6, 5.1.7, 5.1.8","Vendor Relations Manager, Operations Manager",2,159,72,11384,This phase addresses the need to finalize vendor settlements.
+5.1.6,T147,Validate payment amounts with vendors,8,5.1.5,-,"Vendor Relations Manager, Operations Manager, System Architect",1,85,59,5052,It covers validate payment amounts with vendors in the overall process.
+5.1.7,T148,Sign vendor closing statements,10,5.1.5,5.1.9,"Vendor Relations Manager, Project Director",2,32,62,1969,This task supports sign vendor closing statements as part of the workflow.
+5.1.8,T149,Collect all signage,25,5.1.5,"5.1.9, 5.1.10","Production Manager, Event Coordinator",1,48,52,2518,This section emphasizes collect all signage to maintain progress.
+5.1.9,T150,Recover rental equipment,16,"5.1.8,5.1.7",-,"Production Manager, Operations Manager",1,58,50,2872,This section emphasizes recover rental equipment to maintain progress.
+5.1.10,T151,Distribute staff thank-you packages,16,5.1.8,5.2.1,"Project Director, Operations Manager",3,159,82,13057,This task supports distribute staff thank-you packages as part of the workflow.
+5.2,,Analysis and Reporting,,,,,,,,,It covers analysis and reporting in the overall process.
+5.2.1,T152,Analyze ticket sales data,15,5.1.10,"5.2.2, 5.2.6","Database Administrator, Ticketing System Specialist, System Architect",1,213,54,11532,The purpose here is to manage analyze ticket sales data.
+5.2.2,T154,Summarize ticketing trends,11,5.2.1,"5.2.3, 5.2.5, 5.2.6, 5.2.7","Database Administrator, Ticketing System Specialist, Project Director",3,144,76,10986,This task supports summarize ticketing trends as part of the workflow.
+5.2.3,T156,Send sponsor appreciation letters,20,5.2.2,"5.2.4, 5.2.7, 5.2.9","Project Director, Vendor Relations Manager",2,186,71,13154,It covers send sponsor appreciation letters in the overall process.
+5.2.4,T157,Hold final team debrief,10,5.2.3,-,"Project Director, Scrum Master/Agile Coach, Operations Manager",1,186,49,9038,It helps coordinate hold final team debrief within the project.
+5.2.5,T159,Close all vendor contracts,19,5.2.2,-,"Vendor Relations Manager, Project Director",2,80,65,5188,This task supports close all vendor contracts as part of the workflow.
+5.2.6,T160,Ensure all contracts are signed & scanned,10,"5.2.1,5.2.2",-,"Vendor Relations Manager, Operations Manager",2,27,72,1939,This task supports ensure all contracts are signed & scanned as part of the workflow.
+5.2.7,T162,Submit financial audit,25,"5.2.3,5.2.2",5.2.8,"Project Director, Operations Manager, Vendor Relations Manager",3,213,92,19553,It covers submit financial audit in the overall process.
+5.2.8,T164,Archive event media materials,15,5.2.7,-,"Operations Manager, Database Administrator, System Architect",2,27,61,1656,This section emphasizes archive event media materials to maintain progress.
+5.2.9,M015,[Milestone] Closeout and Final Submission Complete,9,5.2.3,-,"Project Director, Operations Manager, Production Manager",1,27,56,1510,This task supports [milestone] closeout and final submission complete as part of the workflow.
+,,,,,,,,,,1123833,
