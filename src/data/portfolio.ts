@@ -307,7 +307,7 @@ export const projects: Project[] = [
     demoLabel: 'Live Demo',
     repositoryStatus: 'available',
     deploymentStatus:
-      'Vercel production app and /api/analyze endpoint verified with short MP4 smoke tests; public demo validates upload size before submission.',
+      'Vercel production app and /api/analyze endpoint verified with short MP4 smoke tests; public demo now validates 32 MB uploads and a 30-second clip limit before submission.',
     accessibleLabel: 'Open AI Gym Trainer live demo',
     githubUrl: 'https://github.com/Jinhyeok513/gym-ai-trainer',
     liveDemoUrl: 'https://gym-ai-trainer-two.vercel.app',

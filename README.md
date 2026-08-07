@@ -61,7 +61,7 @@ npm run build
 
 - Contact links use the verified GitHub and email values provided by Jinhyeok Kim.
 - BioGeoDA and Gym AI Trainer descriptions are based on inspected local project README files, source structure, and metrics files.
-- Gym AI Trainer is linked to the public Vercel app and uses its documented short-video public demo flow.
+- Gym AI Trainer is linked to the public Vercel app and uses its documented 32 MB / 30-second public demo upload flow.
 - The Tennis project links to the existing public repository and embeds a derived HTML5 tracking-result video generated from the repository pipeline.
 - AAPL Stock Direction Prediction is included as an embedded analysis dashboard with code, results, diagnostic plots, dataset notes, and limitations.
 - The Event Management System Project Plan is presented as a sanitised academic case study; the original report and workbook are not public.

@@ -10,7 +10,7 @@ Workout video analysis needs more than a single prediction label. A useful revie
 Jinhyeok built and documented the application workflow from video upload through preprocessing, MobileNetV2 inference, MediaPipe Pose analysis, OpenCV rendering and CSV/JSON reporting.
 
 ## Approach
-- Accepted a short video clip through a web interface.
+- Accepted a short video clip through a web interface, with the public demo limited to 32 MB and 30 seconds.
 - Sampled frames and classified supported exercise types with MobileNetV2.
 - Extracted body landmarks with MediaPipe Pose.
 - Calculated joint-angle metrics and rule-based feedback.
